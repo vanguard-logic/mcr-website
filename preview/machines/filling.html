@@ -4,10 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Filling Machines | Vanguard Logic Development</title>
-<meta name="description" content="Accurate filling for bottles, jars, pouches and cups, by weight or by volume.">
+<meta name="description" content="Accurate filling for bottles, jars, packets, sachets, pouches and cups, by weight or by volume.">
 <meta name="theme-color" content="#0C2A33">
 <link rel="icon" href="../img/apps/vanguard.png">
 <style>
+.mgal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:10px}
+.mgal .mg{border-radius:16px;background:#0A2F4A center/cover no-repeat;box-shadow:0 12px 30px rgba(10,47,74,.18);animation:pop .8s both;filter:contrast(1.06) saturate(1.12);transition:transform .5s}
+.mgal .mg:hover{transform:scale(1.03)}
+.mgal .mg:first-child{grid-column:span 2;grid-row:span 2}
+.mgal .mg:nth-child(2){animation-delay:.1s}.mgal .mg:nth-child(3){animation-delay:.2s}.mgal .mg:nth-child(4){animation-delay:.3s}.mgal .mg:nth-child(5){animation-delay:.4s}.mgal .mg:nth-child(6){animation-delay:.5s}
+@media(max-width:860px){.mgal{grid-template-columns:1fr 1fr;grid-auto-rows:130px}}
 .cine{position:relative;height:420px;background:#0A2F4A center/cover no-repeat fixed;display:flex;align-items:flex-end;filter:contrast(1.08) saturate(1.1)}
 .cine:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(5,20,30,.85))}
 .cine .wrap{position:relative;padding-bottom:40px;width:100%;color:#fff}
@@ -111,15 +117,15 @@ footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
 <body>
 <header><div class="wrap nav"><div class="lft"><a class="back" href="../vanguard.html">‹ <span>Back</span></a><img src="../img/apps/vanguard.png" alt="Vanguard Logic Development"></div><a class="btn btn-or" href="#request">Request a Quote</a></div></header>
 <div class="hero"><div class="wrap">
-  <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1578496479531-32e296d5c6e1?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="mgal"><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1578496479531-32e296d5c6e1?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Filling nozzles dispensing liquid"></div><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1643836791063-18c8a3a3731e?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Filled bottles of lemonade"></div><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1781243680806-51150561d833?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Small filled sachets"></div><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1706881811901-1d068b6f6fb5?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Filled pouches"></div></div>
   <h1>Filling Machines</h1><div class="tg">Liquids · Syrups · Pastes</div>
-  <p>Accurate filling for bottles, jars, pouches and cups, by weight or by volume.</p>
+  <p>Accurate filling for bottles, jars, packets, sachets, pouches and cups, by weight or by volume.</p>
   <div class="ctas"><a class="btn btn-or" href="#request">Request a Quote ›</a><a class="btn btn-wh" href="#features">See Features</a></div>
 </div></div>
 <section id="features"><div class="wrap">
   <div class="who"><b>Made for:</b> Beverage, syrup, sauce and pulp producers of every size.</div>
   <h2 style="margin-top:40px">Features</h2><p class="sub">Built to your product, pack and output.</p>
-  <div class="feat"><div class="f"><i>01</i><h3>Weight or volume filling</h3><p>Accurate fill for every container.</p></div><div class="f"><i>02</i><h3>Many pack types</h3><p>Bottles, jars, pouches and cups.</p></div><div class="f"><i>03</i><h3>Single or multi-nozzle</h3><p>Choose the output you need.</p></div><div class="f"><i>04</i><h3>Easy cleaning</h3><p>Quick to clean between batches.</p></div><div class="f"><i>05</i><h3>Semi-automatic to fully automatic</h3><p>Start small and upgrade later.</p></div><div class="f"><i>06</i><h3>Touch-screen control</h3><p>Simple screens for your operators.</p></div></div>
+  <div class="feat"><div class="f"><i>01</i><h3>Weight or volume filling</h3><p>Accurate fill for every container.</p></div><div class="f"><i>02</i><h3>Many pack types</h3><p>Bottles, jars, packets, sachets, pouches and cups.</p></div><div class="f"><i>03</i><h3>Single or multi-nozzle</h3><p>Choose the output you need.</p></div><div class="f"><i>04</i><h3>Easy cleaning</h3><p>Quick to clean between batches.</p></div><div class="f"><i>05</i><h3>Semi-automatic to fully automatic</h3><p>Start small and upgrade later.</p></div><div class="f"><i>06</i><h3>Touch-screen control</h3><p>Simple screens for your operators.</p></div></div>
 </div></section>
 <div class="cine" style="background-image:url('https://images.unsplash.com/photo-1578496479531-32e296d5c6e1?auto=format&fit=crop&w=1600&q=80')"><div class="wrap"><b>Filling Machines</b><span>Built for food. Built to last.</span></div></div>
 <section class="alt"><div class="wrap">

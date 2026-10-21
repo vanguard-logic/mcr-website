@@ -4,10 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Batch Q | Vanguard Logic Development</title>
-<meta name="description" content="Batch Q is a formulation and production app for food and beverage makers. Keep your recipes in one place, receive ingredients for production and make every batch the same way.">
+<meta name="description" content="Batch Q is a formulation and production app for food and beverage makers, from small batches to commercial production. Keep your recipes in one place, receive ingredients for production and make every batch the same way.">
 <meta name="theme-color" content="#0C2A33">
 <link rel="icon" href="../img/apps/vanguard.png">
 <style>
+.mgal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:10px}
+.mgal .mg{border-radius:16px;background:#0A2F4A center/cover no-repeat;box-shadow:0 12px 30px rgba(10,47,74,.18);animation:pop .8s both;filter:contrast(1.06) saturate(1.12);transition:transform .5s}
+.mgal .mg:hover{transform:scale(1.03)}
+.mgal .mg:first-child{grid-column:span 2;grid-row:span 2}
+.mgal .mg:nth-child(2){animation-delay:.1s}.mgal .mg:nth-child(3){animation-delay:.2s}.mgal .mg:nth-child(4){animation-delay:.3s}.mgal .mg:nth-child(5){animation-delay:.4s}.mgal .mg:nth-child(6){animation-delay:.5s}
+@media(max-width:860px){.mgal{grid-template-columns:1fr 1fr;grid-auto-rows:130px}}
 .cine{position:relative;height:420px;background:#0A2F4A center/cover no-repeat fixed;display:flex;align-items:flex-end;filter:contrast(1.08) saturate(1.1)}
 .cine:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(5,20,30,.85))}
 .cine .wrap{position:relative;padding-bottom:40px;width:100%;color:#fff}
@@ -113,7 +119,7 @@ footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
 <div class="hero"><div class="wrap">
   <div class="lg"><img src="../img/apps/batchq.png" alt="Batch Q logo"></div>
   <h1>Batch Q</h1><div class="tg">Ultra Formulator</div><span class="ver">Version uF 1.0.0</span>
-  <p>Batch Q is a formulation and production app for food and beverage makers. Keep your recipes in one place, receive ingredients for production and make every batch the same way.</p>
+  <p>Batch Q is a formulation and production app for food and beverage makers, from small batches to commercial production. Keep your recipes in one place, receive ingredients for production and make every batch the same way.</p>
   <div class="ctas"><a class="btn btn-or" href="#request">Request Demo ›</a><a class="btn btn-wh" href="#features">See Features</a></div>
 </div></div>
 <section id="features"><div class="wrap">
@@ -126,7 +132,7 @@ footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
   <div class="eds" style="grid-template-columns:repeat(3,1fr)"><div class="ed"><b>Base</b><span>12 recipes</span><small>Standard version</small></div><div class="ed"><b>Lite</b><span>18 recipes</span><small>2 production zones</small></div><div class="ed"><b>Pro</b><span>30 recipes</span><small>5 production zones</small></div></div><p class="ednote">Extra production zones can be added on request.</p>
   <div class="plans">
     <div class="plan"><span class="pi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#004E7A" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><div><b>Outright Purchase</b><span>Pay once and own your licence.</span></div></div>
-    <div class="plan"><span class="pi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#004E7A" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><div><b>Monthly Subscription</b><span>Low monthly payment, cancel any time.</span></div></div>
+    <div class="plan"><span class="pi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#004E7A" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><div><b>Monthly Subscription</b><span>Pay a small fee every month.</span></div></div>
   </div>
 </div></section>
 <style>@media(max-width:860px){.eds{grid-template-columns:1fr 1fr!important}}</style>

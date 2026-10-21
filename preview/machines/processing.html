@@ -8,6 +8,12 @@
 <meta name="theme-color" content="#0C2A33">
 <link rel="icon" href="../img/apps/vanguard.png">
 <style>
+.mgal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:10px}
+.mgal .mg{border-radius:16px;background:#0A2F4A center/cover no-repeat;box-shadow:0 12px 30px rgba(10,47,74,.18);animation:pop .8s both;filter:contrast(1.06) saturate(1.12);transition:transform .5s}
+.mgal .mg:hover{transform:scale(1.03)}
+.mgal .mg:first-child{grid-column:span 2;grid-row:span 2}
+.mgal .mg:nth-child(2){animation-delay:.1s}.mgal .mg:nth-child(3){animation-delay:.2s}.mgal .mg:nth-child(4){animation-delay:.3s}.mgal .mg:nth-child(5){animation-delay:.4s}.mgal .mg:nth-child(6){animation-delay:.5s}
+@media(max-width:860px){.mgal{grid-template-columns:1fr 1fr;grid-auto-rows:130px}}
 .cine{position:relative;height:420px;background:#0A2F4A center/cover no-repeat fixed;display:flex;align-items:flex-end;filter:contrast(1.08) saturate(1.1)}
 .cine:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(5,20,30,.85))}
 .cine .wrap{position:relative;padding-bottom:40px;width:100%;color:#fff}
@@ -111,7 +117,7 @@ footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
 <body>
 <header><div class="wrap nav"><div class="lft"><a class="back" href="../vanguard.html">‹ <span>Back</span></a><img src="../img/apps/vanguard.png" alt="Vanguard Logic Development"></div><a class="btn btn-or" href="#request">Request a Quote</a></div></header>
 <div class="hero"><div class="wrap">
-  <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1651525670054-279c154bc3b6?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="mgal"><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1695088957388-0af262a565ac?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Fruit being stirred in a cooking pot"></div><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1651525670054-279c154bc3b6?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Machines in a fruit processing plant"></div><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1600984177310-c86c8f8fa9c7?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Smooth cream mixed in a bowl"></div><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1651525669944-00de65d3b8a5?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Apples moving through a processing line"></div></div>
   <h1>Processing &amp; Mixing</h1><div class="tg">Mixing · Cooking · Heating · Cooling</div>
   <p>Food-grade stainless steel tanks for mixing, cooking, heating and cooling, sized from pilot batch to full production.</p>
   <div class="ctas"><a class="btn btn-or" href="#request">Request a Quote ›</a><a class="btn btn-wh" href="#features">See Features</a></div>

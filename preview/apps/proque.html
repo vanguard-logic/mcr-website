@@ -8,6 +8,12 @@
 <meta name="theme-color" content="#0C2A33">
 <link rel="icon" href="../img/apps/vanguard.png">
 <style>
+.mgal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:10px}
+.mgal .mg{border-radius:16px;background:#0A2F4A center/cover no-repeat;box-shadow:0 12px 30px rgba(10,47,74,.18);animation:pop .8s both;filter:contrast(1.06) saturate(1.12);transition:transform .5s}
+.mgal .mg:hover{transform:scale(1.03)}
+.mgal .mg:first-child{grid-column:span 2;grid-row:span 2}
+.mgal .mg:nth-child(2){animation-delay:.1s}.mgal .mg:nth-child(3){animation-delay:.2s}.mgal .mg:nth-child(4){animation-delay:.3s}.mgal .mg:nth-child(5){animation-delay:.4s}.mgal .mg:nth-child(6){animation-delay:.5s}
+@media(max-width:860px){.mgal{grid-template-columns:1fr 1fr;grid-auto-rows:130px}}
 .cine{position:relative;height:420px;background:#0A2F4A center/cover no-repeat fixed;display:flex;align-items:flex-end;filter:contrast(1.08) saturate(1.1)}
 .cine:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(5,20,30,.85))}
 .cine .wrap{position:relative;padding-bottom:40px;width:100%;color:#fff}
@@ -117,7 +123,7 @@ footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
   <div class="ctas"><a class="btn btn-or" href="#request">Request Demo ›</a><a class="btn btn-wh" href="#features">See Features</a></div>
 </div></div>
 <section id="features"><div class="wrap">
-  <div class="who"><b>Made for:</b> Factories, warehouses and suppliers that deliver to customers.</div>
+  <div class="who"><b>Made for:</b> Factories, warehouses and supply chains that deliver to customers.</div>
   <h2 style="margin-top:40px">Features</h2><p class="sub">Everything you need, in simple and clear screens.</p>
   <div class="feat"><div class="f"><i>01</i><h3>Purchase orders</h3><p>Create purchase orders and receive goods from suppliers.</p></div><div class="f"><i>02</i><h3>Dispatch flow</h3><p>Storekeeper, Security and Dispatch each confirm their step.</p></div><div class="f"><i>03</i><h3>Delivery notes</h3><p>Create delivery notes and gate passes.</p></div><div class="f"><i>04</i><h3>Proof of delivery</h3><p>Record proof of delivery at the customer.</p></div><div class="f"><i>05</i><h3>Goods returns</h3><p>Return notes for defects, expiry or other reasons, with scans as evidence.</p></div><div class="f"><i>06</i><h3>Share documents</h3><p>Send documents as PDF by WhatsApp or email.</p></div><div class="f"><i>07</i><h3>Works with OptiStox</h3><p>Received goods go straight into OptiStox stock.</p></div></div>
 </div></section>
@@ -126,7 +132,7 @@ footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
   <div class="eds" style="grid-template-columns:repeat(4,1fr)"><div class="ed"><b>Mini</b><span>30 items</span><small>1 user + 1 admin</small></div><div class="ed"><b>Lite</b><span>50 items</span><small>2 users + 1 admin</small></div><div class="ed"><b>Pro</b><span>100 items</span><small>5 users + 2 admins</small></div><div class="ed"><b>Max</b><span>Unlimited items</span><small>10 users + 3 admins</small></div></div>
   <div class="plans">
     <div class="plan"><span class="pi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#004E7A" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><div><b>Outright Purchase</b><span>Pay once and own your licence.</span></div></div>
-    <div class="plan"><span class="pi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#004E7A" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><div><b>Monthly Subscription</b><span>Low monthly payment, cancel any time.</span></div></div>
+    <div class="plan"><span class="pi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#004E7A" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><div><b>Monthly Subscription</b><span>Pay a small fee every month.</span></div></div>
   </div>
 </div></section>
 <style>@media(max-width:860px){.eds{grid-template-columns:1fr 1fr!important}}</style>
