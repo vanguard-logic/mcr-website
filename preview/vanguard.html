@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apps, Software &amp; Machinery | Vanguard Logic Development</title>
+<meta name="description" content="Apps, software and food processing machinery by Vanguard Logic Development.">
+<meta name="theme-color" content="#0C2A33">
+<link rel="icon" href="img/apps/vanguard.png">
+<style>
+.cine{position:relative;height:420px;background:#0A2F4A center/cover no-repeat fixed;display:flex;align-items:flex-end;filter:contrast(1.08) saturate(1.1)}
+.cine:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(5,20,30,.85))}
+.cine .wrap{position:relative;padding-bottom:40px;width:100%;color:#fff}
+.cine b{display:block;font-size:40px;line-height:1.1}.cine span{color:#FFD27A;font-size:18px;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:860px){.cine{height:280px;background-attachment:scroll}.cine b{font-size:30px}}
+:root{--bg:#FDFCF9;--bg2:#F1F5F9;--ink:#1B2733;--muted:#5D6B78;--blue:#004E7A;--navy:#0A2F4A;--red:#CC0000;--amber:#EE9B2A;--amber-d:#D27A0C;--teal:#0C2A33;--edge:rgba(0,78,122,.12);--edge2:rgba(0,78,122,.28)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Calibri,Carlito,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg);font-size:17px;line-height:1.6}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:var(--teal);box-shadow:0 4px 16px rgba(0,0,0,.2)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:84px;gap:12px}
+.nav .lft{display:flex;align-items:center;gap:14px}
+.nav img{height:66px;width:auto;border-radius:8px}
+.back{display:inline-flex;align-items:center;gap:6px;color:#D7E6EF;font-weight:700;font-size:15px;border:1px solid rgba(255,255,255,.25);border-radius:30px;padding:8px 14px;transition:.2s}
+.back:hover{background:rgba(255,255,255,.1);color:#fff}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 26px;border-radius:40px;font-weight:700;font-size:16px;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .2s,box-shadow .3s;isolation:isolate}
+.btn:before{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(110deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .7s;z-index:-1}
+.btn:hover:before{left:150%}.btn:hover{transform:translateY(-3px)}.btn:active{transform:scale(.97)}
+.btn-or{background:linear-gradient(135deg,#F4A73A,#E0820C);color:#fff;box-shadow:0 6px 18px rgba(224,130,12,.25)}
+.btn-bl{background:linear-gradient(135deg,#0A6AA0,#004E7A);color:#fff}
+.btn-wh{background:#fff;border-color:var(--edge2);color:var(--navy)}
+.btn[disabled]{opacity:.6;pointer-events:none}
+.hero{padding:56px 0 50px;text-align:center;background:radial-gradient(ellipse at 50% 0%,#EAF2F8,transparent 70%)}
+.hero .lg{background:#fff;border:1px solid var(--edge);border-radius:24px;display:inline-block;padding:26px 40px;box-shadow:0 14px 40px rgba(10,47,74,.1);animation:pop .8s cubic-bezier(.2,.8,.2,1)}
+.hero .lg img{height:110px;width:auto}
+.hero .ph{height:380px;border-radius:24px;background:#0A2F4A center/cover no-repeat;box-shadow:0 24px 60px rgba(10,47,74,.35);animation:pop .8s cubic-bezier(.2,.8,.2,1),kb 16s ease-in-out infinite alternate;position:relative;overflow:hidden;filter:contrast(1.08) saturate(1.1)}
+.hero .ph:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.45));border-radius:24px}
+@keyframes kb{from{background-size:110%}to{background-size:125%}}
+@keyframes pop{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:none}}
+.hero h1{font-size:44px;color:var(--navy);margin:26px 0 6px;line-height:1.15}
+.hero .tg{color:var(--red);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:14px;margin-bottom:10px}
+.ver{display:inline-block;font-size:14px;font-weight:700;color:var(--blue);background:#E6F0F7;border-radius:20px;padding:3px 14px;margin-bottom:14px}
+.hero p{color:var(--muted);font-size:19px;max-width:700px;margin:0 auto 26px}
+.hero .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+section{padding:60px 0}
+h2{font-size:32px;color:var(--navy);margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:28px}
+.who{background:#fff;border:1px solid var(--edge);border-left:5px solid var(--red);border-radius:16px;padding:18px 22px}
+.who b{color:var(--navy)}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.f{background:#fff;border:1px solid var(--edge);border-radius:18px;padding:22px;transition:.3s;opacity:0;transform:translateY(20px)}
+.f.in{opacity:1;transform:none}
+.f:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(10,47,74,.1);border-color:var(--edge2)}
+.f i{display:flex;width:40px;height:40px;border-radius:12px;background:#E6F0F7;align-items:center;justify-content:center;margin-bottom:12px;font-style:normal;color:var(--blue);font-weight:800}
+.f h3{font-size:18px;color:var(--navy);margin-bottom:4px}
+.f p{color:var(--muted);font-size:15.5px}
+.alt{background:var(--bg2)}
+.eds{display:grid;gap:16px}
+.ed{background:#fff;border:1px solid var(--edge);border-radius:18px;padding:24px;text-align:center;transition:.3s}
+.ed:hover{border-color:var(--amber);box-shadow:0 14px 30px rgba(224,130,12,.15);transform:translateY(-4px)}
+.ed b{display:block;font-size:22px;color:var(--navy)}
+.ed span{display:block;color:var(--amber-d);font-weight:700;margin-top:4px}
+.ed small{color:var(--muted);font-size:15px}
+.ednote{color:var(--muted);margin-top:14px;font-size:15px;text-align:center}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.plan{background:#fff;border:2px solid var(--edge);border-radius:18px;padding:22px;display:flex;gap:16px;align-items:center;transition:.3s}
+.plan:hover{border-color:var(--blue);transform:translateY(-3px)}
+.plan .pi{width:50px;height:50px;border-radius:14px;background:#E6F0F7;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.plan b{display:block;color:var(--navy);font-size:19px}
+.plan span{color:var(--muted);font-size:15px}
+.req{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:start}
+.rside{background:linear-gradient(160deg,var(--blue),var(--navy));color:#fff;border-radius:20px;padding:30px}
+.rside h2{color:#fff}.rside p{color:#C9DCEB;margin-bottom:16px}
+.rside ul{list-style:none;color:#E3EDF5}
+.rside li{padding:4px 0 4px 24px;position:relative}
+.rside li:before{content:"✓";position:absolute;left:0;color:#F4B544;font-weight:800}
+.box{background:#fff;border:1px solid var(--edge);border-radius:20px;padding:28px}
+.box h3{color:var(--navy);font-size:20px;margin-bottom:4px}
+.box .hint{color:var(--muted);font-size:15px;margin-bottom:18px}
+.choices{display:grid;gap:12px}
+.ch{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:#FBFAF7;border:1px solid #D9E1E8;border-radius:14px;padding:16px 18px;cursor:pointer;font-family:inherit;font-size:17px;color:var(--ink);transition:.25s}
+.ch:hover{border-color:var(--blue);background:#fff;transform:translateX(4px);box-shadow:0 8px 20px rgba(10,47,74,.08)}
+.ch .ci{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ch b{display:block;color:var(--navy)}.ch small{color:var(--muted);font-size:14px}
+.ch .go{margin-left:auto;color:var(--blue);font-size:20px;font-weight:700}
+.step{display:none;animation:pop .4s}.step.on{display:block}
+.prog{display:flex;gap:6px;margin-bottom:18px}
+.prog i{flex:1;height:4px;border-radius:4px;background:#E2E8EE}
+.prog i.on{background:linear-gradient(90deg,#CC0000,#004E7A)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.fld{position:relative;margin-bottom:14px}
+.fld input,.fld select,.fld textarea{width:100%;padding:20px 14px 8px;background:#FBFAF7;border:1px solid #D9E1E8;border-radius:12px;font-family:inherit;font-size:16px;color:var(--ink)}
+.fld textarea{min-height:100px;resize:vertical}
+.fld label{position:absolute;left:14px;top:15px;color:var(--muted);pointer-events:none;transition:.2s}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px rgba(0,78,122,.12)}
+.fld input:focus+label,.fld input:not(:placeholder-shown)+label,.fld textarea:focus+label,.fld textarea:not(:placeholder-shown)+label,.fld.sel label{top:5px;font-size:12px;color:var(--blue)}
+.err{color:#C0392B;font-size:14px;margin-bottom:10px;display:none}
+.done{text-align:center;padding:20px 0}
+.done .tick{width:64px;height:64px;border-radius:50%;background:#EAF6EE;color:#1D8A47;font-size:34px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.fb{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between}
+footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
+.dev{display:flex;align-items:center;gap:16px;justify-content:center;padding:28px 20px;flex-wrap:wrap;text-align:center}
+.dev img{height:70px;border-radius:8px}
+.copy{background:#081C22;padding:14px 0;font-size:14px;text-align:center}
+.copy b{color:#fff}
+@media(max-width:860px){.feat{grid-template-columns:1fr 1fr}.req{grid-template-columns:1fr}.hero h1{font-size:34px}.hero .lg{padding:18px 22px}.hero .lg img{height:76px}.nav img{height:54px}.hero .ph{height:220px}}
+@media(max-width:560px){.feat,.f2,.plans{grid-template-columns:1fr}.back span{display:none}.nav .btn{padding:10px 14px;font-size:14px}}
+
+.vhero{position:relative;padding:70px 0 60px;text-align:center;background:radial-gradient(ellipse at 50% 0%,#14414E,#0C2A33 70%);color:#fff;overflow:hidden}
+.vhero img{height:150px;margin:0 auto 20px;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.4);animation:pop .9s cubic-bezier(.2,.8,.2,1)}
+.vhero h1{font-size:42px;margin-bottom:8px}.vhero p{color:#B9CFD8;font-size:19px;max-width:640px;margin:0 auto}
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.vc,.mc2{background:#fff;border:1px solid var(--edge);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:.3s}
+.vc:hover,.mc2:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(10,47,74,.15);border-color:var(--edge2)}
+.vl{height:130px;display:flex;align-items:center;justify-content:center;padding:18px 26px;border-bottom:1px solid var(--edge)}
+.vl img{max-height:84px;width:auto}
+.vb{padding:22px;flex:1;display:flex;flex-direction:column}
+.vb small{color:var(--red);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
+.vb b{font-size:21px;color:var(--navy);margin:4px 0 6px}
+.vb .ver{align-self:flex-start;margin-bottom:8px}
+.vb p{color:var(--muted);font-size:16px;flex:1;margin-bottom:12px}
+.buy{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.buy em{font-style:normal;font-size:13px;font-weight:700;color:var(--blue);border:1px solid var(--edge2);border-radius:20px;padding:3px 10px}
+.more{color:var(--blue);font-weight:700}
+.mi{height:220px;background:#0A2F4A center/cover no-repeat;transition:transform .8s;filter:contrast(1.08) saturate(1.1)}
+.mc2:hover .mi{transform:scale(1.06)}
+@media(max-width:860px){.vgrid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.vgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="lft"><a class="back" href="index.html">‹ <span>Back</span></a><img src="img/apps/vanguard.png" alt="Vanguard Logic Development"></div><a class="btn btn-or" href="contact.html">Contact Us</a></div></header>
+<div class="vhero"><div class="wrap"><img src="img/apps/vanguard.png" alt="Vanguard Logic Development"><h1>Apps, Software &amp; Machinery</h1><p>Products developed by Vanguard Logic Development for food and beverage businesses of every size.</p></div></div>
+<section><div class="wrap"><h2>Apps &amp; Software</h2><p class="sub">Every app is available as an outright purchase or a monthly subscription.</p><div class="vgrid"><a class="vc" href="apps/optistox.html" target="_blank" rel="noopener"><div class="vl"><img src="img/apps/optistox.png" alt="OptiStox logo"></div><div class="vb"><small>Next-Gen Smart Inventory</small><b>OptiStox</b><span class="ver">Version oX 1.0.0</span><p>Stock, receiving, hand-out and suppliers in one simple app, with QR scanning and expiry tracking.</p><div class="buy"><em>Outright purchase</em><em>Monthly subscription</em></div><span class="more">View Details ›</span></div></a><a class="vc" href="apps/batchq.html" target="_blank" rel="noopener"><div class="vl"><img src="img/apps/batchq.png" alt="Batch Q logo"></div><div class="vb"><small>Ultra Formulator</small><b>Batch Q</b><span class="ver">Version uF 1.0.0</span><p>Recipe formulation and production control for food and beverage makers, from small kitchens to factories.</p><div class="buy"><em>Outright purchase</em><em>Monthly subscription</em></div><span class="more">View Details ›</span></div></a><a class="vc" href="apps/costcast.html" target="_blank" rel="noopener"><div class="vl"><img src="img/apps/costcast.png" alt="Cost-Cast Ci logo"></div><div class="vb"><small>Factory Costing</small><b>Cost-Cast Ci</b><span class="ver">Version Ci 1.0.0</span><p>Product and production costing for food and beverage factories. Know your true cost per batch and per unit.</p><div class="buy"><em>Outright purchase</em><em>Monthly subscription</em></div><span class="more">View Details ›</span></div></a><a class="vc" href="apps/horeca.html" target="_blank" rel="noopener"><div class="vl"><img src="img/apps/horeca.png" alt="Cost-Cast HORECA logo"></div><div class="vb"><small>Menu Costing</small><b>Cost-Cast HORECA</b><span class="ver">Version 1.0.0</span><p>Menu costing for hotels, restaurants, cafés and bars, with cost %, suggested selling price, service charge and VAT.</p><div class="buy"><em>Outright purchase</em><em>Monthly subscription</em></div><span class="more">View Details ›</span></div></a><a class="vc" href="apps/proque.html" target="_blank" rel="noopener"><div class="vl"><img src="img/apps/proque.png" alt="ProQue logo"></div><div class="vb"><small>Procurement · Dispatch · Delivery</small><b>ProQue</b><span class="ver">Version 1.0.0</span><p>Purchase orders, dispatch, gate passes and proof of delivery, linked to your OptiStox store.</p><div class="buy"><em>Outright purchase</em><em>Monthly subscription</em></div><span class="more">View Details ›</span></div></a></div></div></section>
+<section class="alt"><div class="wrap"><h2>Machinery</h2><p class="sub">Manual to fully automatic. SME to industrial scale. Installation and staff training included.</p><div class="vgrid"><a class="mc2" href="machines/processing.html" target="_blank" rel="noopener"><div class="mi" style="background-image:url('https://images.unsplash.com/photo-1651525670054-279c154bc3b6?auto=format&fit=crop&w=1600&q=80')"></div><div class="vb"><small>Mixing · Cooking · Heating · Cooling</small><b>Processing &amp; Mixing</b><p>Food-grade stainless steel tanks for mixing, cooking, heating and cooling, sized from pilot batch to full production.</p><span class="more">View Details ›</span></div></a><a class="mc2" href="machines/filling.html" target="_blank" rel="noopener"><div class="mi" style="background-image:url('https://images.unsplash.com/photo-1578496479531-32e296d5c6e1?auto=format&fit=crop&w=1600&q=80')"></div><div class="vb"><small>Liquids · Syrups · Pastes</small><b>Filling Machines</b><p>Accurate filling for bottles, jars, pouches and cups, by weight or by volume.</p><span class="more">View Details ›</span></div></a><a class="mc2" href="machines/packaging.html" target="_blank" rel="noopener"><div class="mi" style="background-image:url('https://images.unsplash.com/photo-1778940454587-2bef3ac0dfbb?auto=format&fit=crop&w=1600&q=80')"></div><div class="vb"><small>Capping · Sealing · Labelling</small><b>Packaging &amp; Sealing</b><p>Capping, sealing and labelling equipment that matches your pack and your output.</p><span class="more">View Details ›</span></div></a></div></div></section>
+<footer>
+  <div class="dev"><img src="img/apps/vanguard.png" alt="Vanguard Logic Development"><div><b style="color:#fff;font-size:18px">Vanguard Logic Development</b></div></div>
+  <div class="copy"><b>© 2026 Vanguard Logic Development.</b> All rights reserved. No copying or distribution without written permission.</div>
+</footer>
+</body>
+</html>
