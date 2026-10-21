@@ -4,10 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ProQue | Vanguard Logic Development</title>
-<meta name="description" content="ProQue manages goods coming in and going out. From purchase orders to proof of delivery, every step is recorded and shared.">
+<meta name="description" content="ProQue manages goods coming in and going out. From purchase orders to proof of delivery, every step is recorded, and every delivery can be monitored online in real time.">
 <meta name="theme-color" content="#0C2A33">
 <link rel="icon" href="../img/apps/vanguard.png">
 <style>
+.phones{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;padding:10px 0}
+.phone{width:270px;border-radius:36px;padding:12px;background:#111;box-shadow:0 30px 60px rgba(10,47,74,.3),inset 0 0 0 2px #333;animation:pfl 6s ease-in-out infinite}
+.phone.d{animation-delay:-3s;transform:translateY(30px)}
+.phone img{border-radius:26px;width:100%}
+@keyframes pfl{50%{translate:0 -10px}}
 .mgal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:10px}
 .mgal .mg{border-radius:16px;background:#0A2F4A center/cover no-repeat;box-shadow:0 12px 30px rgba(10,47,74,.18);animation:pop .8s both;filter:contrast(1.06) saturate(1.12);transition:transform .5s}
 .mgal .mg:hover{transform:scale(1.03)}
@@ -33,7 +38,7 @@ header{position:sticky;top:0;z-index:50;background:var(--teal);box-shadow:0 4px 
 .btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 26px;border-radius:40px;font-weight:700;font-size:16px;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .2s,box-shadow .3s;isolation:isolate}
 .btn:before{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(110deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .7s;z-index:-1}
 .btn:hover:before{left:150%}.btn:hover{transform:translateY(-3px)}.btn:active{transform:scale(.97)}
-.btn-or{background:linear-gradient(135deg,#F4A73A,#E0820C);color:#fff;box-shadow:0 6px 18px rgba(224,130,12,.25)}
+.btn-or{background:linear-gradient(135deg,#E00000,#A30000);color:#fff;box-shadow:0 6px 18px rgba(204,0,0,.25)}
 .btn-bl{background:linear-gradient(135deg,#0A6AA0,#004E7A);color:#fff}
 .btn-wh{background:#fff;border-color:var(--edge2);color:var(--navy)}
 .btn[disabled]{opacity:.6;pointer-events:none}
@@ -119,13 +124,15 @@ footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
 <div class="hero"><div class="wrap">
   <div class="lg"><img src="../img/apps/proque.png" alt="ProQue logo"></div>
   <h1>ProQue</h1><div class="tg">Procurement · Dispatch · Delivery</div><span class="ver">Version 1.0.0</span>
-  <p>ProQue manages goods coming in and going out. From purchase orders to proof of delivery, every step is recorded and shared.</p>
+  <p>ProQue manages goods coming in and going out. From purchase orders to proof of delivery, every step is recorded, and every delivery can be monitored online in real time.</p>
   <div class="ctas"><a class="btn btn-or" href="#request">Request Demo ›</a><a class="btn btn-wh" href="#features">See Features</a></div>
 </div></div>
-<section id="features"><div class="wrap">
+<section class="alt"><div class="wrap"><h2>Real App Screens</h2><p class="sub">Screens taken from the ProQue demo.</p>
+  <div class="phones"><div class="phone"><img src="../img/screens/proque-1.png" alt="ProQue screen 1" loading="lazy"></div><div class="phone d"><img src="../img/screens/proque-2.png" alt="ProQue screen 2" loading="lazy"></div></div>
+</div></section><section id="features"><div class="wrap">
   <div class="who"><b>Made for:</b> Factories, warehouses and supply chains that deliver to customers.</div>
   <h2 style="margin-top:40px">Features</h2><p class="sub">Everything you need, in simple and clear screens.</p>
-  <div class="feat"><div class="f"><i>01</i><h3>Purchase orders</h3><p>Create purchase orders and receive goods from suppliers.</p></div><div class="f"><i>02</i><h3>Dispatch flow</h3><p>Storekeeper, Security and Dispatch each confirm their step.</p></div><div class="f"><i>03</i><h3>Delivery notes</h3><p>Create delivery notes and gate passes.</p></div><div class="f"><i>04</i><h3>Proof of delivery</h3><p>Record proof of delivery at the customer.</p></div><div class="f"><i>05</i><h3>Goods returns</h3><p>Return notes for defects, expiry or other reasons, with scans as evidence.</p></div><div class="f"><i>06</i><h3>Share documents</h3><p>Send documents as PDF by WhatsApp or email.</p></div><div class="f"><i>07</i><h3>Works with OptiStox</h3><p>Received goods go straight into OptiStox stock.</p></div></div>
+  <div class="feat"><div class="f"><i>01</i><h3>Purchase orders</h3><p>Create purchase orders and receive goods from suppliers.</p></div><div class="f"><i>02</i><h3>Dispatch flow</h3><p>Storekeeper, Security and Dispatch each confirm their step.</p></div><div class="f"><i>03</i><h3>Delivery notes</h3><p>Create delivery notes and gate passes.</p></div><div class="f"><i>04</i><h3>Proof of delivery</h3><p>Record proof of delivery at the customer.</p></div><div class="f"><i>05</i><h3>Goods returns</h3><p>Return notes for defects, expiry or other reasons, with scans as evidence.</p></div><div class="f"><i>06</i><h3>Real-time delivery monitoring</h3><p>Follow every delivery online, live, from dispatch to the customer.</p></div><div class="f"><i>07</i><h3>Share documents</h3><p>Send documents as PDF by WhatsApp or email.</p></div><div class="f"><i>08</i><h3>Works with OptiStox</h3><p>Received goods go straight into OptiStox stock.</p></div></div>
 </div></section>
 <section class="alt"><div class="wrap">
   <h2>Editions and Pricing</h2><p class="sub">Choose the edition that fits your business, then choose how to pay.</p>

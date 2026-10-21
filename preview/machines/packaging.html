@@ -3,11 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Packaging &amp; Sealing | Vanguard Logic Development</title>
+<title>Packaging | Vanguard Logic Development</title>
 <meta name="description" content="Capping, sealing and labelling for bottles, containers, boxes, pouches, cans and cups, matched to your output.">
 <meta name="theme-color" content="#0C2A33">
 <link rel="icon" href="../img/apps/vanguard.png">
 <style>
+.phones{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;padding:10px 0}
+.phone{width:270px;border-radius:36px;padding:12px;background:#111;box-shadow:0 30px 60px rgba(10,47,74,.3),inset 0 0 0 2px #333;animation:pfl 6s ease-in-out infinite}
+.phone.d{animation-delay:-3s;transform:translateY(30px)}
+.phone img{border-radius:26px;width:100%}
+@keyframes pfl{50%{translate:0 -10px}}
 .mgal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:10px}
 .mgal .mg{border-radius:16px;background:#0A2F4A center/cover no-repeat;box-shadow:0 12px 30px rgba(10,47,74,.18);animation:pop .8s both;filter:contrast(1.06) saturate(1.12);transition:transform .5s}
 .mgal .mg:hover{transform:scale(1.03)}
@@ -33,7 +38,7 @@ header{position:sticky;top:0;z-index:50;background:var(--teal);box-shadow:0 4px 
 .btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 26px;border-radius:40px;font-weight:700;font-size:16px;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .2s,box-shadow .3s;isolation:isolate}
 .btn:before{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(110deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .7s;z-index:-1}
 .btn:hover:before{left:150%}.btn:hover{transform:translateY(-3px)}.btn:active{transform:scale(.97)}
-.btn-or{background:linear-gradient(135deg,#F4A73A,#E0820C);color:#fff;box-shadow:0 6px 18px rgba(224,130,12,.25)}
+.btn-or{background:linear-gradient(135deg,#E00000,#A30000);color:#fff;box-shadow:0 6px 18px rgba(204,0,0,.25)}
 .btn-bl{background:linear-gradient(135deg,#0A6AA0,#004E7A);color:#fff}
 .btn-wh{background:#fff;border-color:var(--edge2);color:var(--navy)}
 .btn[disabled]{opacity:.6;pointer-events:none}
@@ -117,8 +122,8 @@ footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
 <body>
 <header><div class="wrap nav"><div class="lft"><a class="back" href="../vanguard.html">‹ <span>Back</span></a><img src="../img/apps/vanguard.png" alt="Vanguard Logic Development"></div><a class="btn btn-or" href="#request">Request a Quote</a></div></header>
 <div class="hero"><div class="wrap">
-  <div class="mgal"><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1637251393207-6c870eaca402?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Plastic bottles"></div><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1562077981-4d7eafd44932?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Cups"></div><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1777991642635-3877651ce879?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="A metal can"></div><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Cardboard box"></div><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1597317292822-d0fa5be43aea?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Plastic food container"></div><div class="mg" style="background-image:url('https://images.unsplash.com/photo-1778940454587-2bef3ac0dfbb?auto=format&fit=crop&w=900&q=80')" role="img" aria-label="Bottle caps"></div></div>
-  <h1>Packaging &amp; Sealing</h1><div class="tg">Capping · Sealing · Labelling</div>
+  <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1701328778019-e95dedbf5346?auto=format&fit=crop&w=1600&q=80')"></div>
+  <h1>Packaging</h1><div class="tg">Capping · Sealing · Labelling</div>
   <p>Capping, sealing and labelling for bottles, containers, boxes, pouches, cans and cups, matched to your output.</p>
   <div class="ctas"><a class="btn btn-or" href="#request">Request a Quote ›</a><a class="btn btn-wh" href="#features">See Features</a></div>
 </div></div>
@@ -127,13 +132,13 @@ footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
   <h2 style="margin-top:40px">Features</h2><p class="sub">Built to your product, pack and output.</p>
   <div class="feat"><div class="f"><i>01</i><h3>Capping</h3><p>Screw caps and press-on lids.</p></div><div class="f"><i>02</i><h3>Sealing</h3><p>Cup, tray and pouch sealing.</p></div><div class="f"><i>03</i><h3>Labelling</h3><p>Neat and accurate label placement.</p></div><div class="f"><i>04</i><h3>Date coding</h3><p>Batch and expiry date printing.</p></div><div class="f"><i>05</i><h3>Line integration</h3><p>Works with your filling machine.</p></div><div class="f"><i>06</i><h3>Manual to fully automatic</h3><p>Built for SMEs up to industrial scale.</p></div></div>
 </div></section>
-<div class="cine" style="background-image:url('https://images.unsplash.com/photo-1701328778019-e95dedbf5346?auto=format&fit=crop&w=1600&q=80')"><div class="wrap"><b>Packaging &amp; Sealing</b><span>Built for food. Built to last.</span></div></div>
+<div class="cine" style="background-image:url('https://images.unsplash.com/photo-1684695749267-233af13276d0?auto=format&fit=crop&w=1600&q=80')"><div class="wrap"><b>Packaging</b><span>Built for food. Built to last.</span></div></div>
 <section class="alt"><div class="wrap">
   <h2>Every machine includes</h2><p class="sub">From order to production.</p>
   <div class="feat" style="grid-template-columns:repeat(3,1fr)"><div class="f in"><i>✓</i><h3>Design to your needs</h3><p>Sized to your product and daily output.</p></div><div class="f in"><i>✓</i><h3>Installation</h3><p>We install and test the machine at your site.</p></div><div class="f in"><i>✓</i><h3>Staff training</h3><p>On-site training for your operators.</p></div></div>
 </div></section>
 <section id="request"><div class="wrap req">
-  <div class="rside"><h2>Request a Quote</h2><p>Tell us about your product and output, and we will send you a quotation for Packaging &amp; Sealing.</p><ul><li>Built to your output</li><li>Installation included</li><li>On-site staff training</li></ul></div>
+  <div class="rside"><h2>Request a Quote</h2><p>Tell us about your product and output, and we will send you a quotation for Packaging.</p><ul><li>Built to your output</li><li>Installation included</li><li>On-site staff training</li></ul></div>
   <div class="box">
     <div class="step on" id="s0">
       <h3>How would you like to contact us?</h3><p class="hint">Choose one option.</p>
@@ -170,11 +175,11 @@ footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
   </div>
 </div></section>
 <script>
-var ITEM='Packaging & Sealing',KIND='Quote';
+var ITEM='Packaging',KIND='Quote';
 function show(i){document.querySelectorAll('.step').forEach(function(s,k){s.classList.toggle('on',k===i)})}
 function v(i){return document.getElementById(i).value.trim()}
-function viaWA(){window.open('https://wa.me/94771512933?text='+encodeURIComponent('Hello, I would like a quote for Packaging & Sealing.'),'_blank')}
-function viaMail(){location.href='mailto:mcr@mcrconceptvld.com?subject='+encodeURIComponent(KIND+' request - '+ITEM)+'&body='+encodeURIComponent('Hello, I would like a quote for Packaging & Sealing.')}
+function viaWA(){window.open('https://wa.me/94771512933?text='+encodeURIComponent('Hello, I would like a quote for Packaging.'),'_blank')}
+function viaMail(){location.href='mailto:mcr@mcrconceptvld.com?subject='+encodeURIComponent(KIND+' request - '+ITEM)+'&body='+encodeURIComponent('Hello, I would like a quote for Packaging.')}
 function next1(){var e=document.getElementById('err1');if(!v('n')||!v('e')||!v('p')){e.style.display='block';return}e.style.display='none';show(2)}
 function send(){var b=document.getElementById('sendBtn'),e=document.getElementById('err2');b.disabled=true;e.style.display='none';
 fetch('https://formsubmit.co/ajax/mcr@mcrconceptvld.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},

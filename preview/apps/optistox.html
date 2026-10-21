@@ -8,6 +8,11 @@
 <meta name="theme-color" content="#0C2A33">
 <link rel="icon" href="../img/apps/vanguard.png">
 <style>
+.phones{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;padding:10px 0}
+.phone{width:270px;border-radius:36px;padding:12px;background:#111;box-shadow:0 30px 60px rgba(10,47,74,.3),inset 0 0 0 2px #333;animation:pfl 6s ease-in-out infinite}
+.phone.d{animation-delay:-3s;transform:translateY(30px)}
+.phone img{border-radius:26px;width:100%}
+@keyframes pfl{50%{translate:0 -10px}}
 .mgal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:10px}
 .mgal .mg{border-radius:16px;background:#0A2F4A center/cover no-repeat;box-shadow:0 12px 30px rgba(10,47,74,.18);animation:pop .8s both;filter:contrast(1.06) saturate(1.12);transition:transform .5s}
 .mgal .mg:hover{transform:scale(1.03)}
@@ -33,7 +38,7 @@ header{position:sticky;top:0;z-index:50;background:var(--teal);box-shadow:0 4px 
 .btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 26px;border-radius:40px;font-weight:700;font-size:16px;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .2s,box-shadow .3s;isolation:isolate}
 .btn:before{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(110deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .7s;z-index:-1}
 .btn:hover:before{left:150%}.btn:hover{transform:translateY(-3px)}.btn:active{transform:scale(.97)}
-.btn-or{background:linear-gradient(135deg,#F4A73A,#E0820C);color:#fff;box-shadow:0 6px 18px rgba(224,130,12,.25)}
+.btn-or{background:linear-gradient(135deg,#E00000,#A30000);color:#fff;box-shadow:0 6px 18px rgba(204,0,0,.25)}
 .btn-bl{background:linear-gradient(135deg,#0A6AA0,#004E7A);color:#fff}
 .btn-wh{background:#fff;border-color:var(--edge2);color:var(--navy)}
 .btn[disabled]{opacity:.6;pointer-events:none}
@@ -122,7 +127,9 @@ footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
   <p>OptiStox keeps track of every item in your store. Receive stock, hand it out, check what is left and know when items will expire, all from your phone, tablet or computer.</p>
   <div class="ctas"><a class="btn btn-or" href="#request">Request Demo ›</a><a class="btn btn-wh" href="#features">See Features</a></div>
 </div></div>
-<section id="features"><div class="wrap">
+<section class="alt"><div class="wrap"><h2>Real App Screens</h2><p class="sub">Screens taken from the OptiStox demo.</p>
+  <div class="phones"><div class="phone"><img src="../img/screens/optistox-1.png" alt="OptiStox screen 1" loading="lazy"></div><div class="phone d"><img src="../img/screens/optistox-2.png" alt="OptiStox screen 2" loading="lazy"></div></div>
+</div></section><section id="features"><div class="wrap">
   <div class="who"><b>Made for:</b> Food and beverage factories, warehouses, hotels, restaurants and any business with a store.</div>
   <h2 style="margin-top:40px">Features</h2><p class="sub">Everything you need, in simple and clear screens.</p>
   <div class="feat"><div class="f"><i>01</i><h3>Receive stock</h3><p>Record every delivery with date, lot number and expiry date.</p></div><div class="f"><i>02</i><h3>Hand out stock</h3><p>Issue items to production or staff and see the balance at once.</p></div><div class="f"><i>03</i><h3>QR codes</h3><p>Each item gets its own QR code. Scan with the built-in scanner.</p></div><div class="f"><i>04</i><h3>Suppliers</h3><p>Keep supplier details and see who supplied each lot.</p></div><div class="f"><i>05</i><h3>Stock requests</h3><p>Send stock requests by WhatsApp and email in one tap.</p></div><div class="f"><i>06</i><h3>Expiry alerts</h3><p>See items that are close to expiry before they become waste.</p></div><div class="f"><i>07</i><h3>Three sign-in levels</h3><p>User, Admin and Developer, each with the right access.</p></div><div class="f"><i>08</i><h3>Cloud backup</h3><p>Your data is saved online and safe if a device is lost.</p></div><div class="f"><i>09</i><h3>Works with ProQue</h3><p>Link to ProQue for purchase orders, dispatch and delivery.</p></div></div>
