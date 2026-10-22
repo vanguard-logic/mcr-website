@@ -33,30 +33,32 @@
     'sports drink', 'kombucha', 'flavour', 'flavor', 'essence', 'colour', 'emulsion', 'stock powder', 'stock cube'];
 
   var I = [
-    { k: ['hi', 'hello', 'hey', 'good morning', 'good afternoon', 'good evening', 'ayubowan'], a: 'Hello! How can I help you today? You can ask about our services, the products we formulate, equipment or our apps.', c: 1 },
+    { k: ['hi', 'hello', 'hey', 'good morning', 'good afternoon', 'good evening', 'ayubowan'], a: 'Hello! Everything we do is tailor-made: formulas and recipes, machinery and apps, built to your exact requirements. What would you like to create?', c: 1 },
     { k: ['thank', 'thanks', 'thank you', 'great', 'ok', 'okay', 'bye', 'goodbye'], a: 'You are welcome! If you need anything else, just ask. You can also message us on WhatsApp at any time.', w: 1 },
     { k: ['alcohol', 'beer', 'wine', 'liquor', 'spirit', 'arrack', 'vodka', 'whisky', 'whiskey', 'gin', 'rum', 'brewery', 'distillery', 'cider'], x: 2, a: 'MCR Concept does not work on alcoholic drinks. We formulate non-alcoholic beverages, syrups, sauces, dairy, bakery and many other foods.', l: ['products'] },
-    { k: ['service', 'what do you do', 'what you do', 'offer', 'help me', 'consult', 'consultant', 'consultancy'], a: 'We offer four services:\n• Product Formulation\n• Shelf Life & Compliance\n• Scale-Up & Training\n• Processing Equipment\nYou can choose one service or the complete package.', l: ['services', 'contact'] },
-    { k: ['product', 'category', 'categories', 'what can you make', 'what can you formulate', 'what formula', 'which product', 'what do you formulate', 'type', 'list'], a: 'We formulate almost any food or beverage product, far more than we could ever list. For example: drinks and juices, syrups, sauces such as soy sauce, seasonings such as biryani mix, stock powders, instant premixes, dairy, bakery, snacks, pickles and much more.\nTell us what you want to make, and we will build the formula around your batch size, target market and selling price.', s: 1 },
-    { k: ['formula', 'recipe', 'develop', 'development', 'new product', 'reformulat', 'improve', 'clean label', 'idea', 'how do i start', 'how to start', 'get started', 'start a project', 'start my project', 'begin'], b: 1, a: 'We create new recipes and improve existing ones, balancing taste, texture, cost and shelf life. You receive an approved formula and samples, and you own the formula.', l: ['services', 'contact'] },
+    { k: ['service', 'what do you do', 'what you do', 'offer', 'help me', 'consult', 'consultant', 'consultancy'], a: 'Everything we do is tailor-made to your requirements:\n• Product formulation and recipes\n• Shelf life and compliance\n• Scale-up and staff training\n• Machinery, built or custom-fabricated for you\n• Apps and software, ready-made or customised\nTell us what you need and we will shape the solution around it.', l: ['services'], s: 'all' },
+    { k: ['product', 'category', 'categories', 'what can you make', 'what can you formulate', 'what formula', 'which product', 'what do you formulate', 'type', 'list'], a: 'We formulate almost any food or beverage product, far more than we could ever list. For example: drinks and juices, syrups, sauces such as soy sauce, seasonings such as biryani mix, stock powders, instant premixes, dairy, bakery, snacks, pickles and much more.\nTell us what you want to make, and we will build the formula around your batch size, target market and selling price.', s: 'f' },
+    { k: ['formula', 'recipe', 'develop', 'development', 'new product', 'reformulat', 'improve', 'clean label', 'idea', 'how do i start', 'how to start', 'get started', 'start a project', 'start my project', 'begin'], b: 'f', a: 'We create new recipes and improve existing ones, balancing taste, texture, cost and shelf life. You receive an approved formula and samples, and you own the formula.', l: ['services', 'contact'] },
     { k: ['shelf life', 'shelf-life', 'stability', 'stable', 'label', 'labelling', 'labeling', 'compliance', 'standard', 'regulation', 'legal', 'preservative', 'ph', 'brix', 'safe', 'safety', 'spoil', 'expiry'], a: 'We make sure your product stays safe, stable and legal. This covers shelf-life trials, Brix, pH and preservation control, and labelling to local and international standards. You receive the product specification and label data.', l: ['services', 'contact'] },
     { k: ['scale', 'scale up', 'scale-up', 'training', 'train', 'staff', 'batch sheet', 'sop', 'pilot', 'commercial production', 'mass production', 'large batch'], a: 'We take your formula from the lab bench to full production: pilot batches, commercial runs, batch sheets and SOPs. Then we train your team on site to make it right every time.', l: ['services', 'contact'] },
-    { k: ['machine', 'machinery', 'equipment', 'tank', 'mixer', 'mixing', 'cooking', 'filling', 'filler', 'packaging', 'packing', 'sealing', 'sachet', 'bottling', 'automatic', 'automation', 'semi automatic', 'manual'], a: 'We supply processing, filling and packaging machines, from manual to fully automatic, with installation and staff training. Choose a machine type to see details and request a quote.', l: ['processing', 'filling', 'packaging'] },
+    { k: ['machine', 'machinery', 'equipment', 'tank', 'mixer', 'mixing', 'cooking', 'kettle', 'boiler', 'filling', 'filler', 'packaging', 'packing', 'sealing', 'sealer', 'sachet', 'bottling', 'capping', 'labelling machine', 'labeling machine', 'conveyor', 'dryer', 'drier', 'grinder', 'pulveriser', 'pulverizer', 'oven', 'extruder', 'pasteuriser', 'pasteurizer', 'homogeniser', 'homogenizer', 'fabricate', 'fabrication', 'custom machine', 'stainless', 'automatic', 'automation', 'semi automatic', 'production line'], b: 'm', a: 'We can fabricate almost any processing, filling or packaging machine, including fully custom designs. Every machine is built around your product, output, space and budget, from manual to fully automatic.' },
     { k: ['process', 'step', 'how do you work', 'how you work', 'how does it work', 'how it works', 'procedure'], a: 'We work in five clear steps:\n1. Brief\n2. Formulate\n3. Test\n4. Scale Up\n5. Launch\nYou approve every step.', l: ['process', 'contact'] },
     { k: ['how long', 'time', 'timeline', 'duration', 'week', 'month', 'fast', 'quick', 'when'], a: 'Most formulation projects take 4 to 12 weeks, depending on the product and the testing required.', l: ['process', 'contact'] },
-    { k: ['price', 'pricing', 'cost', 'charge', 'fee', 'rate', 'quote', 'quotation', 'how much', 'budget', 'expensive', 'cheap', 'payment'], a: 'We send a fixed quotation after reviewing your brief, and the first discussion is free. Answer a few quick questions about your product and we will prepare your quotation.', s: 1, w: 1 },
+    { k: ['price', 'pricing', 'cost', 'charge', 'fee', 'rate', 'quote', 'quotation', 'how much', 'budget', 'expensive', 'cheap', 'payment'], a: 'Every project is tailor-made, so we send a fixed quotation after we understand your requirements. The first discussion is free. Choose what you need and answer a few quick questions, and we will prepare your quotation.', s: 'all', w: 1 },
     { k: ['own', 'owner', 'ownership', 'rights', 'belong'], x: 2, a: 'You do. Full ownership of the formula passes to you when the project is complete and paid for.', l: ['faq'] },
     { k: ['nda', 'confidential', 'secret', 'privacy', 'non disclosure', 'non-disclosure', 'copy my'], x: 2, a: 'Yes. We sign a mutual NDA before you share any confidential details, and every enquiry is treated as confidential.', l: ['contact'] },
     { k: ['manufacture', 'manufacturing', 'produce for', 'make for', 'co-pack', 'copack', 'co pack', 'supply product', 'buy product', 'sell product', 'wholesale', 'oem', 'private label', 'white label'], a: 'We do not manufacture products. We develop your product and supply the equipment. Production takes place at your own facility or at a co-packer of your choice.', l: ['faq', 'contact'] },
     { k: ['small', 'startup', 'start-up', 'start up', 'sme', 'home', 'beginner', 'first product', 'my own brand', 'own brand', 'small business'], a: 'Yes. We work with home-based producers, start-ups and SMEs, as well as growing brands and large manufacturers. We can start with small-batch formulas and manual or semi-automatic equipment.', l: ['services', 'contact'] },
     { k: ['large', 'factory', 'industrial', 'big company', 'export', 'volume', 'manufacturer'], a: 'For large manufacturers we work on yield and cost optimisation, automated production lines and products ready for export markets.', l: ['services', 'contact'] },
     { k: ['where', 'country', 'countries', 'location', 'located', 'address', 'office', 'overseas', 'international', 'abroad', 'visit'], a: 'We work with clients locally and internationally, and we support products for local and export markets. Contact us and we will arrange the best way to work together.', l: ['contact'], w: 1 },
-    { k: ['app', 'apps', 'software', 'system', 'vanguard', 'vld', 'program', 'digital', 'erp', 'pos'], a: 'Vanguard Logic Development builds our apps:\n• OptiStox: smart inventory\n• Batch Q: formulation and production\n• Cost-Cast Ci: factory costing\n• Cost-Cast HORECA: menu costing\n• ProQue: procurement and delivery\nEach is available as an outright purchase or a monthly subscription.', l: ['vanguard'] },
-    { k: ['optistox', 'inventory', 'stock control', 'stock app', 'stock management', 'stock software', 'stock system', 'store', 'warehouse', 'stores'], x: 2, a: 'OptiStox is our smart inventory app: stock, receiving, hand-out and suppliers in one place, with QR scanning and expiry tracking. You can request a demo on its page.', l: ['optistox'] },
-    { k: ['batch q', 'batchq', 'ultra formulator', 'production control', 'production app'], x: 2, a: 'Batch Q (Ultra Formulator) handles recipe formulation and production control for food and beverage makers, from small batches to commercial production. You can request a demo on its page.', l: ['batchq'] },
-    { k: ['cost-cast', 'costcast', 'cost cast', 'costing', 'cost per unit', 'cost control'], x: 2, a: 'Cost-Cast Ci gives product and production costing for food and beverage factories, so you know your true cost per batch and per unit. For hotels and restaurants, see Cost-Cast HORECA.', l: ['costcast', 'horeca'] },
-    { k: ['horeca', 'hotel', 'restaurant', 'cafe', 'café', 'bar', 'menu', 'kitchen', 'catering'], x: 2, a: 'Cost-Cast HORECA is menu costing for hotels, restaurants, cafés and bars, with cost %, suggested selling price, service charge and VAT.', l: ['horeca'] },
-    { k: ['proque', 'procurement', 'purchase order', 'dispatch', 'delivery', 'supplier order', 'logistic'], x: 2, a: 'ProQue handles purchase orders, dispatch, real-time delivery monitoring and proof of delivery, and it links to your OptiStox store.', l: ['proque'] },
+    { g: 'a', k: ['app', 'apps', 'software', 'system', 'vanguard', 'vld', 'program', 'digital', 'erp', 'pos'], a: 'Vanguard Logic Development builds our apps:\n• OptiStox: smart inventory\n• Batch Q: formulation and production\n• Cost-Cast Ci: factory costing\n• Cost-Cast HORECA: menu costing\n• ProQue: procurement and delivery\nWe can customise any of them for your business, or build a new app for your needs.', l: ['vanguard'], s: 'a' },
+    { k: ['custom app', 'custom software', 'customise app', 'customize app', 'customise the app', 'customize the app', 'build an app', 'build app', 'new app', 'develop an app', 'develop app', 'app for my', 'software for my', 'integration', 'integrate'], x: 2, b: 'a', a: 'Yes. We can customise any of our apps or build a new one, tailored to the way your business works.' },
+    { k: ['custom', 'tailor', 'tailored', 'tailor-made', 'bespoke', 'special requirement', 'my requirement'], a: 'Yes. Everything we do is tailor-made to your requirements: formulas and recipes, machinery and apps. Choose what you need and we will ask a few quick questions.', s: 'all' },
+    { g: 'a', k: ['optistox', 'inventory', 'stock control', 'stock app', 'stock management', 'stock software', 'stock system', 'store', 'warehouse', 'stores'], x: 2, a: 'OptiStox is our smart inventory app: stock, receiving, hand-out and suppliers in one place, with QR scanning and expiry tracking. You can request a demo on its page. We can also customise it for your business.', l: ['optistox'], s: 'a' },
+    { g: 'a', k: ['batch q', 'batchq', 'ultra formulator', 'production control', 'production app'], x: 2, a: 'Batch Q (Ultra Formulator) handles recipe formulation and production control for food and beverage makers, from small batches to commercial production. You can request a demo on its page. We can also customise it for your business.', l: ['batchq'], s: 'a' },
+    { g: 'a', k: ['cost-cast', 'costcast', 'cost cast', 'costing', 'cost per unit', 'cost control'], x: 2, a: 'Cost-Cast Ci gives product and production costing for food and beverage factories, so you know your true cost per batch and per unit. For hotels and restaurants, see Cost-Cast HORECA. We can also customise it for your business.', l: ['costcast', 'horeca'], s: 'a' },
+    { g: 'a', k: ['horeca', 'hotel', 'restaurant', 'cafe', 'café', 'bar', 'menu', 'kitchen', 'catering'], x: 2, a: 'Cost-Cast HORECA is menu costing for hotels, restaurants, cafés and bars, with cost %, suggested selling price, service charge and VAT. We can also customise it for your business.', l: ['horeca'], s: 'a' },
+    { g: 'a', k: ['proque', 'procurement', 'purchase order', 'dispatch', 'delivery', 'supplier order', 'logistic'], x: 2, a: 'ProQue handles purchase orders, dispatch, real-time delivery monitoring and proof of delivery, and it links to your OptiStox store. We can also customise it for your business.', l: ['proque'], s: 'a' },
     { k: ['demo', 'trial', 'test the app', 'try'], a: 'You can request a free demo on each app page. Pick an app below and tap Request Demo.', l: ['optistox', 'batchq', 'costcast', 'horeca', 'proque'] },
     { k: ['subscription', 'monthly', 'outright', 'licence', 'license', 'buy app', 'purchase app'], a: 'Every app is available as an outright purchase or a monthly subscription. Request a quote on the app page and we will send the details.', l: ['vanguard'] },
     { k: ['contact', 'phone', 'call', 'number', 'email', 'mail', 'whatsapp', 'talk', 'speak', 'reach', 'meet', 'meeting', 'appointment'], a: 'Call or WhatsApp: +94 771 512 933 or +94 729 818 965\nEmail: mcr@mcrconceptvld.com\nOr send your idea through the contact form.', l: ['contact'], w: 1 },
@@ -76,9 +78,11 @@
       for (var j = 0; j < I[i].k.length; j++) if (has(t, I[i].k[j])) s += (I[i].k[j].indexOf(' ') > -1 ? 2 : 1) * (I[i].x || 1);
       if (s > bs) { bs = s; best = I[i]; }
     }
+    var cw = /(custom|tailor|bespoke|modif|adjust|change the app|special requirement)/.test(t);
+    if (cw) for (var g = 0; g < I.length; g++) if (I[g].g === 'a') for (var h = 0; h < I[g].k.length; h++) if (has(t, I[g].k[h])) return { b: 'a', a: 'Yes. We can customise any of our apps, or build a new one, tailored to the way your business works.' };
     var food = false;
     for (var c = 0; c < FOOD.length; c++) if (has(t, FOOD[c])) { food = true; break; }
-    if (food && (!best || bs <= 1 || best.b || best.s || best.k[0] === 'hi')) return { b: 1 };
+    if (food && (!best || best.b === 'f' || best.s === 'f' || best.k[0] === 'hi' || (bs <= 1 && !best.b && !best.s))) return { b: 'f' };
     if (best) return { a: best.a, links: (best.l || []).map(function (x) { return L[x]; }), w: best.w, c: best.c, s: best.s, b: best.b };
     return null;
   }
@@ -121,22 +125,49 @@
   setTimeout(function () { btn.classList.add('min'); }, 12000);
 
   var bd = box.querySelector('.bd'), inp = box.querySelector('input'), started = false, misses = 0;
-  var START = 'Start my project brief';
-  var CHIPS = [START, 'Our services', 'What we formulate', 'Equipment', 'Apps & software', 'Pricing', 'Talk to us'];
-  var MAP = { 'Our services': 'services', 'What we formulate': 'what can you formulate', 'Equipment': 'equipment machines', 'Apps & software': 'apps software', 'Pricing': 'price', 'Talk to us': 'contact' };
+  var BF = 'Formulate a product', BM = 'Machinery I need', BA = 'App or software I need';
+  var CHIPS = [BF, BM, BA, 'Our services', 'Pricing', 'Talk to us'];
+  var SUG = { f: [BF], m: [BM], a: [BA], all: [BF, BM, BA] };
+  var MAP = { 'Our services': 'services', 'Pricing': 'price', 'Talk to us': 'contact' };
+  var START = {}; START[BF] = 'f'; START[BM] = 'm'; START[BA] = 'a';
 
-  var NS = 'Not sure yet';
-  var Q = [
-    { k: 'Product', q: 'What product do you want to make? Describe it in your own words, for example "biryani seasoning powder in 50 g sachets" or "soy sauce for restaurants".' },
-    { k: 'Project type', q: 'Is this a new product, or do you want to improve a product you already make?', o: ['New product', 'Improve my current product', NS] },
-    { k: 'Batch size', q: 'How much do you plan to make in one batch? You can tap an option or type an amount.', o: ['Under 10 kg / L', '10 to 100 kg / L', '100 to 1,000 kg / L', 'Over 1,000 kg / L', NS] },
-    { k: 'Target market', q: 'Who will buy your product?', o: ['Shops and supermarkets', 'Hotels, restaurants and cafés', 'Factories / bulk buyers', 'Export', 'Online / direct', NS] },
-    { k: 'Packaging', q: 'How will it be packed, and in what size? For example "200 ml bottle" or "1 kg pouch".', o: ['Bottle', 'Jar', 'Pouch or sachet', 'Can', 'Tub or cup', 'Bulk pack', NS] },
-    { k: 'Target selling price', q: 'What selling price do you have in mind per pack? We use this to choose ingredients that fit your price.', o: [NS] },
-    { k: 'Development budget', q: 'What budget do you have for developing this product? This helps us suggest the right project scope.', o: [NS, 'Prefer to discuss'] },
+  var NS = 'Not sure yet', TD = 'Prefer to discuss';
+  var END = [
     { k: 'Name', q: 'Thank you. What is your name?' },
     { k: 'Contact', q: 'Your WhatsApp number or email, so we can reply to you.' }
   ];
+  var TIME = { k: 'Timeline', q: 'When do you need it?', o: ['Within 1 month', '1 to 3 months', '3 to 6 months', 'Just planning', NS] };
+  var BRIEFS = {
+    f: { t: 'Formula brief', i: 'Great! Every formula and recipe we build is tailor-made around your batch size, target market and selling price, so the ingredients, process and cost fit your plan. Please answer a few quick questions (about 1 minute).', q: [
+      { k: 'Product', q: 'What product do you want to make? Describe it in your own words, for example "biryani seasoning powder in 50 g sachets" or "soy sauce for restaurants".' },
+      { k: 'Project type', q: 'Is this a new product, or do you want to improve a product you already make?', o: ['New product', 'Improve my current product', NS] },
+      { k: 'Batch size', q: 'How much do you plan to make in one batch? You can tap an option or type an amount.', o: ['Under 10 kg / L', '10 to 100 kg / L', '100 to 1,000 kg / L', 'Over 1,000 kg / L', NS] },
+      { k: 'Target market', q: 'Who will buy your product?', o: ['Shops and supermarkets', 'Hotels, restaurants and cafés', 'Factories / bulk buyers', 'Export', 'Online / direct', NS] },
+      { k: 'Packaging', q: 'How will it be packed, and in what size? For example "200 ml bottle" or "1 kg pouch".', o: ['Bottle', 'Jar', 'Pouch or sachet', 'Can', 'Tub or cup', 'Bulk pack', NS] },
+      { k: 'Target selling price', q: 'What selling price do you have in mind per pack? We use this to choose ingredients that fit your price.', o: [NS] },
+      { k: 'Development budget', q: 'What budget do you have for developing this product? This helps us suggest the right project scope.', o: [NS, TD] }
+    ] },
+    m: { t: 'Machinery brief', i: 'We build every machine around your needs, from standard designs to fully custom fabrication. Please answer a few quick questions (about 1 minute) so we can design the right machine for you.', q: [
+      { k: 'Machine needed', q: 'What machine or line do you need? Describe it in your own words, for example "powder sachet filling machine" or "200 L cooking kettle with stirrer".' },
+      { k: 'Product handled', q: 'What product will the machine handle, and in what form? Tap an option or type the product name.', o: ['Liquid', 'Thick liquid or sauce', 'Paste', 'Powder', 'Granules', 'Solid pieces', NS] },
+      { k: 'Output needed', q: 'What output do you need? For example "500 bottles per hour" or "200 kg per day".', o: ['Under 100 units / hour', '100 to 500 units / hour', '500 to 2,000 units / hour', 'Over 2,000 units / hour', NS] },
+      { k: 'Automation', q: 'What level of automation do you want?', o: ['Manual', 'Semi-automatic', 'Fully automatic', NS] },
+      { k: 'Container / pack', q: 'What container or pack will it work with, and what size?', o: ['Bottle', 'Jar', 'Pouch or sachet', 'Can', 'Tub or cup', 'Bulk', 'Not applicable', NS] },
+      { k: 'Power and space', q: 'What power supply do you have? You can also type any limits on floor space.', o: ['Single phase', 'Three phase', NS] },
+      TIME,
+      { k: 'Budget', q: 'What budget do you have for this machine?', o: [NS, TD] }
+    ] },
+    a: { t: 'App brief', i: 'We can customise any of our apps or build a new one, tailored to the way your business works. Please answer a few quick questions (about 1 minute).', q: [
+      { k: 'App needs', q: 'What do you need the app to do? Describe it in your own words, for example "track raw material stock and expiry dates" or "cost our menu items".' },
+      { k: 'Business type', q: 'What type of business is it for?', o: ['Food or beverage factory', 'Hotel, restaurant or café', 'Warehouse or store', 'Retail or distribution', 'Other'] },
+      { k: 'Starting point', q: 'How would you like to start?', o: ['Use one of your apps as it is', 'Customise one of your apps', 'Build a new app', NS] },
+      { k: 'Users', q: 'How many people will use it?', o: ['1 to 5', '6 to 20', '21 to 100', 'Over 100', NS] },
+      { k: 'Devices', q: 'Which devices will it be used on?', o: ['Phone', 'Tablet', 'Computer', 'All of these'] },
+      { k: 'Connections', q: 'Does it need to connect with anything else, such as accounts software or an existing system? Type the name, or tap an option.', o: ['No', NS] },
+      TIME,
+      { k: 'Payment preference', q: 'How would you prefer to pay?', o: ['Outright purchase', 'Monthly subscription', NS] }
+    ] }
+  };
   var brief = null;
 
   function scroll() { bd.scrollTop = bd.scrollHeight; }
@@ -154,52 +185,48 @@
     setTimeout(function () { ty.remove(); msg(t, 'b'); links(ls, wa, q, chips, tag); if (after) after(); }, 550);
   }
 
-  function startBrief() {
-    brief = { n: 0, a: {} };
+  function cur() { return brief.list[brief.n]; }
+  function startBrief(type, lead) {
+    var B = BRIEFS[type]; brief = { type: type, n: 0, a: {}, list: B.q.concat(END) };
     inp.placeholder = 'Type your answer…';
-    bot('Great! Every formula we build is designed around your batch size, target market and selling price, so the ingredients, process and cost fit your plan. Please answer a few quick questions (about 1 minute). You can type "cancel" at any time.', null, false, null, null, null, askNext);
+    bot((lead ? lead + ' Please answer a few quick questions (about 1 minute).' : B.i) + ' You can type "cancel" at any time.', null, false, null, null, null, askNext);
   }
-  function askNext() {
-    var s = Q[brief.n];
-    bot(s.q, null, false, null, s.o, 'b' + brief.n);
-  }
+  function askNext() { var s = cur(); bot(s.q, null, false, null, s.o, 'b' + brief.n); }
   function stopBrief(t) { brief = null; inp.placeholder = 'Type your question…'; if (t) bot(t, null, false, null, CHIPS); }
   function briefText() {
-    var t = 'Formula brief from the MCR website\n';
-    Q.forEach(function (s) { t += s.k + ': ' + (brief.a[s.k] || '-') + '\n'; });
+    var t = BRIEFS[brief.type].t + ' from the MCR website\n';
+    brief.list.forEach(function (s) { t += s.k + ': ' + (brief.a[s.k] || '-') + '\n'; });
     return t;
   }
   function briefAnswer(v) {
     if (/^(cancel|stop|exit|quit)$/i.test(v)) return stopBrief('No problem, the brief is cancelled. How else can I help you?');
-    var s = Q[brief.n];
-    if (s.k === 'Contact' && !(/@/.test(v) || (v.replace(/\D/g, '').length >= 7))) {
-      return bot('Please enter a WhatsApp number or an email address so we can reply to you.');
-    }
-    if (s.k === 'Product' && v.length < 3) return bot('Please describe the product in a few words.');
+    var s = cur();
+    if (s.k === 'Contact' && !(/@/.test(v) || (v.replace(/\D/g, '').length >= 7))) return bot('Please enter a WhatsApp number or an email address so we can reply to you.');
+    if (brief.n === 0 && v.length < 3) return bot('Please describe it in a few words.');
     brief.a[s.k] = v; brief.n++;
-    if (brief.n < Q.length) return askNext();
+    if (brief.n < brief.list.length) return askNext();
     inp.placeholder = 'Type your question…';
-    var sum = 'Here is your brief:\n\n' + Q.map(function (q) { return q.k + ': ' + brief.a[q.k]; }).join('\n') + '\n\nTap Send to MCR and our formulation team will contact you.';
+    var sum = 'Here is your ' + BRIEFS[brief.type].t.toLowerCase() + ':\n\n' + brief.list.map(function (q) { return q.k + ': ' + brief.a[q.k]; }).join('\n') + '\n\nTap Send to MCR and our team will contact you.';
     bot(sum, null, false, null, ['Send to MCR', 'Start again'], 'send');
   }
   function sendBrief() {
-    var a = brief.a, note = msg('Sending…', 'b');
-    var data = { _subject: 'Formula brief - ' + a.Name, _cc: 'migiecmb@gmail.com', _template: 'table', _captcha: 'false' };
-    Q.forEach(function (q) { data[q.k] = a[q.k] || '-'; });
+    var a = brief.a, note = msg('Sending…', 'b'), t = BRIEFS[brief.type].t;
+    var data = { _subject: t + ' - ' + a.Name, _cc: 'migiecmb@gmail.com', _template: 'table', _captcha: 'false' };
+    brief.list.forEach(function (q) { data[q.k] = a[q.k] || '-'; });
     var wt = briefText();
     fetch('https://formsubmit.co/ajax/mcr@mcrconceptvld.com', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) })
       .then(function (r) { if (!r.ok) throw 0; return r.json(); })
-      .then(function () { note.remove(); brief = null; bot('Thank you, ' + a.Name + '! Your brief has been sent to our formulation team. We will contact you soon. If it is urgent, you can also send it on WhatsApp.', null, true, wt, ['Our services', 'What we formulate']); })
+      .then(function () { note.remove(); brief = null; bot('Thank you, ' + a.Name + '! Your ' + t.toLowerCase() + ' has been sent to our team. We will contact you soon. If it is urgent, you can also send it on WhatsApp.', null, true, wt, CHIPS.slice(0, 3)); })
       .catch(function () { note.remove(); bot('Sorry, the brief could not be sent from here. Tap WhatsApp Us to send it to us directly.', null, true, wt); });
   }
 
   function reply(r, q) {
-    if (r && r.b) return startBrief();
-    if (r) { misses = 0; return bot(r.a, r.links, r.w, null, r.c ? CHIPS : (r.s ? [START] : null)); }
+    if (r && r.b) { misses = 0; return startBrief(r.b, r.a); }
+    if (r) { misses = 0; return bot(r.a, r.links, r.w, null, r.c ? CHIPS : (r.s ? SUG[r.s] : null)); }
     misses++;
     bot(misses > 1 ? 'Our team can answer that for you directly. Tap WhatsApp Us to send your question now, or use the contact form.' :
-      'Sorry, I do not have an answer for that yet. If you want a product formulated, tap Start my project brief. You can also send your question to our team on WhatsApp.',
-      [L.contact], true, q, misses > 1 ? [START] : CHIPS);
+      'Sorry, I do not have an answer for that yet. Everything we do is tailor-made, so choose what you need below and I will ask a few quick questions. You can also send your question to our team on WhatsApp.',
+      [L.contact], true, q, SUG.all);
   }
   function ask(q) {
     q = (q || '').trim(); if (!q) return;
@@ -209,7 +236,7 @@
   }
   function open() {
     box.classList.add('open'); btn.style.display = 'none';
-    if (!started) { started = true; bot('Hello! I am the MCR Assistant. We can formulate almost any food or beverage product. Tell me what you want to make, or ask about our services, equipment and apps.', null, false, null, CHIPS); }
+    if (!started) { started = true; bot('Hello! I am the MCR Assistant. Everything we do is tailor-made: formulas and recipes, machinery and apps, built to your exact requirements. What would you like to create?', null, false, null, CHIPS); }
     setTimeout(function () { if (window.innerWidth > 520) inp.focus(); }, 300);
   }
   function close() { box.classList.remove('open'); btn.style.display = ''; }
@@ -220,10 +247,10 @@
     var b = e.target.closest('button'); if (!b) return;
     var t = b.textContent, grp = b.parentNode.getAttribute('data-t');
     if (grp === 'send') {
-      if (!brief || brief.n < Q.length) return;
+      if (!brief || brief.n < brief.list.length) return;
       b.parentNode.removeAttribute('data-t');
       msg(t, 'u');
-      return t === 'Send to MCR' ? sendBrief() : startBrief();
+      return t === 'Send to MCR' ? sendBrief() : startBrief(brief.type);
     }
     if (grp && grp.charAt(0) === 'b') {
       if (!brief || grp !== 'b' + brief.n) return;
@@ -232,7 +259,7 @@
     }
     if (brief) return;
     msg(t, 'u');
-    if (t === START) return startBrief();
+    if (START[t]) return startBrief(START[t]);
     reply(answer(MAP[t] || t), t);
   });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && box.classList.contains('open')) close(); });
