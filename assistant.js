@@ -1,7 +1,7 @@
 /* MCR Concept site assistant */
 (function () {
   if (window.__mcrAssistant) return; window.__mcrAssistant = 1;
-  var WA = 'https://wa.me/94771512933';
+  var WA = 'https://wa.me/94729818965';
   var R = '/';
   var BLUE = '#004E7A', RED = '#CC0000';
 
