@@ -217,7 +217,8 @@ header.sc{background:rgba(255,255,255,.97);box-shadow:0 8px 30px rgba(10,47,74,.
 .step .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .step .two div{background:var(--soft);border-radius:14px;padding:12px 14px;font-size:16px}
 .step .two small{display:block;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:12px;color:var(--red);margin-bottom:2px}
-.step.r .pic{order:3}.step.r .card{order:1}.step.r .dot{order:2}
+.step.r .sp{order:3}.step.r .card{order:1}.step.r .dot{order:2}
+.wideimg{margin-top:50px;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px rgba(10,47,74,.18)}.wideimg img{width:100%;height:auto;transition:transform 1.2s}.wideimg:hover img{transform:scale(1.04)}
 
 /* products */
 .pg{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px}
@@ -338,9 +339,9 @@ footer a:hover{color:#fff}
  .pg{grid-template-columns:1fr 1fr}
  .stats{grid-template-columns:1fr 1fr}
  .tl:before,.tl .fill{left:38px}
- .step{grid-template-columns:76px 1fr;gap:18px;margin-bottom:44px}
+ .step{grid-template-columns:76px 1fr;gap:18px;margin-bottom:34px}
  .step .dot{grid-row:1/3;align-self:start}
- .step .pic,.step.r .pic{order:0;grid-column:2;height:220px}
+ .step .sp{display:none}
  .step .card,.step.r .card{order:0;grid-column:2}
  .ft{grid-template-columns:1fr}
  .cta{flex-direction:column;align-items:flex-start;padding:40px}
@@ -371,11 +372,12 @@ footer a:hover{color:#fff}
 <div class="wrap"><div class="crumb fade"><a href="index.html">Home</a> / How We Work</div><div class="eyebrow fade">How We Work</div><h1 class="fade">Five clear steps to <span class="hl2">market-ready.</span></h1><p class="fade">You approve every step, from start to market-ready.</p></div></div>
 <section><div class="wrap">
  <div class="center rv"><div class="eyebrow">Our Process</div><h2>Simple, clear and on track</h2><p class="lead">No guesswork. You always know what happens next, what you share and what you receive.</p></div>
- <div class="tl"><div class="fill"></div><div class="step"><div class="pic"><img src="img/photos/tech-portrait-wide.jpg" alt="Technologist presenting a product sample" loading="lazy"></div><div class="dot">1</div>
-<div class="card"><h3>Brief</h3><p>We listen first. Tell us your idea, your customer and your goals.</p><div class="two"><div><small>You share</small>Your idea, target market, cost and volume</div><div><small>We deliver</small>A clear project plan and quotation</div></div></div></div><div class="step r"><div class="pic"><img src="img/photos/pipetting.jpg" alt="Technologist preparing a bench sample" loading="lazy"></div><div class="dot">2</div>
-<div class="card"><h3>Formulate</h3><p>We create bench samples and fine-tune taste, texture, colour and cost.</p><div class="two"><div><small>You share</small>Feedback on each sample</div><div><small>We deliver</small>An approved formula</div></div></div></div><div class="step"><div class="pic"><img src="img/photos/qa-bottles.jpg" alt="Quality team checking bottles on a production line" loading="lazy"></div><div class="dot">3</div>
-<div class="card"><h3>Test</h3><p>We prove your product is stable, safe and ready to scale.</p><div class="two"><div><small>You share</small>Final taste approval</div><div><small>We deliver</small>Test results and product specification</div></div></div></div><div class="step r"><div class="pic"><img src="img/photos/qa.jpg" alt="Quality inspector checking bottles on a production line" loading="lazy"></div><div class="dot">4</div>
-<div class="card"><h3>Scale Up</h3><p>We move from pilot batch to commercial run, with equipment and training.</p><div class="two"><div><small>You share</small>Factory or co-packer details</div><div><small>We deliver</small>Batch sheets, SOPs, equipment and a trained team</div></div></div></div><div class="step"><div class="pic"><img src="img/photos/bakery2.jpg" alt="Packed products ready for the market" loading="lazy"></div><div class="dot">5</div>
+ <div class="wideimg rv z"><img src="img/photos/lab-wide.jpg" alt="Food development team at work in the laboratory" loading="lazy"></div>
+ <div class="tl"><div class="fill"></div><div class="step"><div class="sp"></div><div class="dot">1</div>
+<div class="card"><h3>Brief</h3><p>We listen first. Tell us your idea, your customer and your goals.</p><div class="two"><div><small>You share</small>Your idea, target market, cost and volume</div><div><small>We deliver</small>A clear project plan and quotation</div></div></div></div><div class="step r"><div class="sp"></div><div class="dot">2</div>
+<div class="card"><h3>Formulate</h3><p>We create bench samples and fine-tune taste, texture, colour and cost.</p><div class="two"><div><small>You share</small>Feedback on each sample</div><div><small>We deliver</small>An approved formula</div></div></div></div><div class="step"><div class="sp"></div><div class="dot">3</div>
+<div class="card"><h3>Test</h3><p>We prove your product is stable, safe and ready to scale.</p><div class="two"><div><small>You share</small>Final taste approval</div><div><small>We deliver</small>Test results and product specification</div></div></div></div><div class="step r"><div class="sp"></div><div class="dot">4</div>
+<div class="card"><h3>Scale Up</h3><p>We move from pilot batch to commercial run, with equipment and training.</p><div class="two"><div><small>You share</small>Factory or co-packer details</div><div><small>We deliver</small>Batch sheets, SOPs, equipment and a trained team</div></div></div></div><div class="step"><div class="sp"></div><div class="dot">5</div>
 <div class="card"><h3>Launch</h3><p>We help you get labels, compliance and market readiness right.</p><div class="two"><div><small>You share</small>Brand assets and launch date</div><div><small>We deliver</small>Label data and launch support</div></div></div></div></div>
 </div></section><section style="padding-top:0"><div class="wrap"><div class="cta rv z"><div><h2>Ready for step one?</h2><p>Share your idea and we will start with a free first discussion.</p></div><a class="btn btn-red pulse" href="contact.html">Start Your Project <span class="ar">→</span></a></div></div></section></main>
 <div class="pager"><div class="wrap"><a class="pgl" href="services.html"><small>‹ Back</small><b>Services</b></a><a class="pgl nx" href="products.html"><small>Next ›</small><b>What We Formulate</b></a></div></div>

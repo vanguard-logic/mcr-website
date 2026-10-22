@@ -8,7 +8,14 @@
 <meta name="theme-color" content="#0C2A33">
 <link rel="icon" href="../img/apps/vanguard.png">
 <style>
-.phones{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;padding:10px 0}
+.mgal2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.mgal2 .gi{height:300px;border-radius:22px;overflow:hidden;box-shadow:0 16px 36px rgba(10,47,74,.15)}
+.mgal2 img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.mgal2 .gi:hover img{transform:scale(1.07)}
+@media(max-width:700px){.mgal2{grid-template-columns:1fr}.mgal2 .gi{height:220px}}
+.phones{display:flex;gap:30px;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px 10px 50px;-webkit-overflow-scrolling:touch}
+.phones::-webkit-scrollbar{height:8px}.phones::-webkit-scrollbar-thumb{background:#CC0000;border-radius:8px}
+.phone{flex:0 0 250px;scroll-snap-align:center}
 .phone{width:270px;border-radius:36px;padding:12px;background:#111;box-shadow:0 30px 60px rgba(10,47,74,.3),inset 0 0 0 2px #333;animation:pfl 6s ease-in-out infinite}
 .phone.d{animation-delay:-3s;transform:translateY(30px)}
 .phone img{border-radius:26px;width:100%}
@@ -19,7 +26,7 @@
 .mgal .mg:first-child{grid-column:span 2;grid-row:span 2}
 .mgal .mg:nth-child(2){animation-delay:.1s}.mgal .mg:nth-child(3){animation-delay:.2s}.mgal .mg:nth-child(4){animation-delay:.3s}.mgal .mg:nth-child(5){animation-delay:.4s}.mgal .mg:nth-child(6){animation-delay:.5s}
 @media(max-width:860px){.mgal{grid-template-columns:1fr 1fr;grid-auto-rows:130px}}
-.cine{position:relative;height:420px;background:#0A2F4A center/cover no-repeat fixed;display:flex;align-items:flex-end;filter:contrast(1.08) saturate(1.1)}
+.cine{position:relative;height:420px;background:#0A2F4A center/cover no-repeat;display:flex;align-items:flex-end;filter:contrast(1.08) saturate(1.1)}
 .cine:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(5,20,30,.85))}
 .cine .wrap{position:relative;padding-bottom:40px;width:100%;color:#fff}
 .cine b{display:block;font-size:40px;line-height:1.1}.cine span{color:#FF8A8A;font-size:18px;letter-spacing:.1em;text-transform:uppercase}
@@ -127,8 +134,8 @@ footer{background:var(--teal);color:#AFC3CC;margin-top:20px}
   <p>ProQue manages goods coming in and going out. From purchase orders to proof of delivery, every step is recorded, and every delivery can be monitored online in real time.</p>
   <div class="ctas"><a class="btn btn-or" href="#request">Request Demo ›</a><a class="btn btn-wh" href="#features">See Features</a></div>
 </div></div>
-<section class="alt"><div class="wrap"><h2>Real App Screens</h2><p class="sub">Screens taken from the ProQue demo.</p>
-  <div class="phones"><div class="phone"><img src="../img/screens/proque-1.png" alt="ProQue screen 1" loading="lazy"></div><div class="phone d"><img src="../img/screens/proque-2.png" alt="ProQue screen 2" loading="lazy"></div></div>
+<section class="alt"><div class="wrap"><h2>Real App Screens</h2><p class="sub">Real screens from the ProQue demo. Swipe to see more.</p>
+  <div class="phones"><div class="phone"><img src="../img/screens/proque-1.png" alt="ProQue screen 1" loading="lazy"></div><div class="phone d"><img src="../img/screens/proque-2.png" alt="ProQue screen 2" loading="lazy"></div><div class="phone"><img src="../img/screens/proque-3.png" alt="ProQue screen 3" loading="lazy"></div><div class="phone d"><img src="../img/screens/proque-4.png" alt="ProQue screen 4" loading="lazy"></div><div class="phone"><img src="../img/screens/proque-5.png" alt="ProQue screen 5" loading="lazy"></div><div class="phone d"><img src="../img/screens/proque-6.png" alt="ProQue screen 6" loading="lazy"></div></div>
 </div></section><section id="features"><div class="wrap">
   <div class="who"><b>Made for:</b> Factories, warehouses and supply chains that deliver to customers.</div>
   <h2 style="margin-top:40px">Features</h2><p class="sub">Everything you need, in simple and clear screens.</p>
