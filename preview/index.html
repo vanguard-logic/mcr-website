@@ -221,7 +221,7 @@ header.sc{background:rgba(255,255,255,.97);box-shadow:0 8px 30px rgba(10,47,74,.
 
 /* products */
 .pg{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px}
-.pt{position:relative;height:320px;border-radius:24px;overflow:hidden;box-shadow:0 12px 30px rgba(10,47,74,.12);cursor:default}
+.pt{position:relative;height:320px;border-radius:24px;overflow:hidden;box-shadow:0 12px 30px rgba(10,47,74,.12);cursor:pointer;display:block}
 .pt.w2{grid-column:span 2}
 .pt img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
 .pt:hover img{transform:scale(1.1)}
@@ -365,7 +365,7 @@ footer a:hover{color:#fff}
 <body class="loading"><div id="loader"><div class="ld"><img src="img/mcr-logo.png" alt="MCR Concept"></div><div class="ldbar"><i id="ldbar"></i></div><div class="ldt" id="ldt">LOADING 0%</div></div><div id="progress"></div>
 <header id="hdr"><div class="wrap nav">
 <a href="index.html" class="logo" aria-label="MCR Concept home"><img src="img/mcr-logo.png" alt="MCR Concept"></a>
-<nav class="menu" id="menu"><a href="index.html" class="lk on">Home</a><a href="services.html" class="lk">Services</a><a href="process.html" class="lk">How We Work</a><a href="products.html" class="lk">Products</a><a href="faq.html" class="lk">FAQ</a><a href="about.html" class="lk">About</a><a href="vanguard.html" class="lk">Apps &amp; Machinery</a><a href="contact.html" class="lk">Contact Us</a><a href="contact.html" class="btn btn-red">Start a Project</a></nav>
+<nav class="menu" id="menu"><a href="index.html" class="lk on">Home</a><a href="services.html" class="lk">Services</a><a href="process.html" class="lk">How We Work</a><a href="products.html" class="lk">What We Formulate</a><a href="faq.html" class="lk">FAQ</a><a href="about.html" class="lk">About</a><a href="vanguard.html" class="lk">Apps &amp; Machinery</a><a href="contact.html" class="lk">Contact Us</a><a href="contact.html" class="btn btn-red">Start a Project</a></nav>
 <button class="burger" id="burger" aria-label="Open menu"><i></i><i></i><i></i></button></div></header>
 <main>
 <section class="hero"><canvas id="net"></canvas><div class="blob a"></div><div class="blob b"></div>
@@ -381,7 +381,6 @@ footer a:hover{color:#fff}
   <div class="s s1"><img src="img/photos/tech-portrait.jpg" alt="Food technologist holding a finished product in a development lab" loading="lazy"></div>
   <div class="s s2"><img src="img/photos/range-white.jpg" alt="Range of finished sauces, syrups and drinks" loading="lazy"></div>
   <div class="s s3"><img src="img/photos/sauce-line.jpg" alt="Modern food production line" loading="lazy"></div>
-  <div class="tagchip"><i>✓</i><div>You own the formula<small>Full ownership, every project</small></div></div>
  </div>
 </div></section>
 
@@ -407,7 +406,7 @@ footer a:hover{color:#fff}
  <div class="exp">
   <a class="ex rv" href="services.html"><img src="img/photos/lab-team2.jpg" alt="Development team reviewing product samples" loading="lazy"><span class="no">01</span><div class="ov"><b>Our Services <i>›</i></b><span>Formulation, testing, scale-up and equipment.</span></div></a>
   <a class="ex rv d1" href="process.html"><img src="img/photos/tank-team.jpg" alt="Team checking processing tanks" loading="lazy"><span class="no">02</span><div class="ov"><b>How We Work <i>›</i></b><span>Five clear steps from idea to market.</span></div></a>
-  <a class="ex rv d2" href="products.html"><img src="img/photos/range-white2.jpg" alt="Bottles and jars of finished products" loading="lazy"><span class="no">03</span><div class="ov"><b>Products <i>›</i></b><span>If you can taste it, we can formulate it.</span></div></a>
+  <a class="ex rv d2" href="products.html"><img src="img/photos/range-white2.jpg" alt="Bottles and jars of finished products" loading="lazy"><span class="no">03</span><div class="ov"><b>What We Formulate <i>›</i></b><span>If you can taste it, we can formulate it.</span></div></a>
   <a class="ex rv" href="faq.html"><img src="img/photos/meeting.jpg" alt="Consultant and client reviewing a product sample" loading="lazy"><span class="no">04</span><div class="ov"><b>FAQ <i>›</i></b><span>Quick answers to common questions.</span></div></a>
   <a class="ex rv d1" href="about.html"><img src="img/photos/lab-crop.jpg" alt="Food development laboratory" loading="lazy"><span class="no">05</span><div class="ov"><b>About Us <i>›</i></b><span>Who we are and what drives us.</span></div></a>
   <a class="ex rv d2" href="contact.html"><img src="img/photos/consultant.jpg" alt="Friendly consultant at his desk" loading="lazy"><span class="no">06</span><div class="ov"><b>Contact Us <i>›</i></b><span>Share your idea with us today.</span></div></a>
@@ -425,7 +424,7 @@ footer a:hover{color:#fff}
 <div class="pager"><div class="wrap"><a class="pgl nx" href="services.html"><small>Next ›</small><b>Services</b></a></div></div>
 <footer><div class="wrap ft">
 <div><img src="img/mcr-logo.png" alt="MCR Concept"><p>Food and beverage formulation, from the first idea to a product on the shelf.</p><div class="soc"><a class="fb" href="https://www.facebook.com/share/19twDEGU3z/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2.4V2.1L14.1 2C10.9 2 10 4.4 10 6v2.5H7.6v3.8H10V22h4v-9.7h3.2l.4-3.8z"/></svg></a><a class="ig" href="https://www.instagram.com/mcr_concept/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/></svg></a><a class="tt" href="https://www.tiktok.com/@mcr.concept" target="_blank" rel="noopener" aria-label="TikTok"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M16.6 2h-3.4v13.6a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.3a6.4 6.4 0 1 0 5.4 6.3V8.8a8 8 0 0 0 4.6 1.5V6.9a4.6 4.6 0 0 1-4.6-4.9z" fill="#25F4EE" transform="translate(-.6 -.4)"/><path d="M16.6 2h-3.4v13.6a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.3a6.4 6.4 0 1 0 5.4 6.3V8.8a8 8 0 0 0 4.6 1.5V6.9a4.6 4.6 0 0 1-4.6-4.9z" fill="#FE2C55" transform="translate(.6 .4)"/><path d="M16.6 2h-3.4v13.6a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.3a6.4 6.4 0 1 0 5.4 6.3V8.8a8 8 0 0 0 4.6 1.5V6.9a4.6 4.6 0 0 1-4.6-4.9z" fill="#fff"/></svg></a><a class="wa" href="https://wa.me/94771512933" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="22" height="22" viewBox="0 0 32 32" fill="#fff"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.5 6.5 0 0 0 1.4 3.4 14.8 14.8 0 0 0 5.7 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.1-.3-.2-.6-.3z"/></svg></a></div></div>
-<div><h4>Menu</h4><nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="process.html">How We Work</a><a href="products.html">Products</a><a href="faq.html">FAQ</a><a href="about.html">About</a><a href="vanguard.html">Apps &amp; Machinery</a><a href="contact.html">Contact Us</a></nav></div>
+<div><h4>Menu</h4><nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="process.html">How We Work</a><a href="products.html">What We Formulate</a><a href="faq.html">FAQ</a><a href="about.html">About</a><a href="vanguard.html">Apps &amp; Machinery</a><a href="contact.html">Contact Us</a></nav></div>
 <div><h4>Contact Us</h4><nav><a href="tel:+94771512933">+94 771 512 933</a><a href="tel:+94729818965">+94 729 818 965</a><a href="mailto:mcr@mcrconceptvld.com">mcr@mcrconceptvld.com</a><span>www.mcrconceptvld.com</span></nav></div>
 </div><div class="copy"><div class="wrap"><span><b>© 2026 MCR Concept.</b> All rights reserved.</span><span>No content or images may be copied or used without written permission.</span></div></div></footer>
 <a class="waf" href="https://wa.me/94771512933" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg width="30" height="30" viewBox="0 0 32 32" fill="#fff"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.5 6.5 0 0 0 1.4 3.4 14.8 14.8 0 0 0 5.7 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -454,6 +453,7 @@ document.querySelectorAll('.btn').forEach(function(x){x.addEventListener('click'
 var st=document.querySelector('.stack');
 if(st&&matchMedia('(hover:hover)').matches){st.parentElement.addEventListener('mousemove',function(e){var r=st.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;st.querySelectorAll('.s').forEach(function(s,i){var k=(i+1)*10;s.style.transform='translate('+(x*k)+'px,'+(y*k)+'px)'})})}
 document.querySelectorAll('.qa button').forEach(function(q){q.onclick=function(){var a=q.parentElement,an=a.querySelector('.ans'),o=a.classList.toggle('open');an.style.maxHeight=o?an.scrollHeight+'px':0}});
+var cs=document.getElementById('cat'),qc=new URLSearchParams(location.search).get('cat');if(cs&&qc){[].forEach.call(cs.options,function(o){if(o.text===qc)cs.value=o.text})}
 var o1=document.querySelector('.qa.open .ans');if(o1)o1.style.maxHeight=o1.scrollHeight+'px';
 var cv=document.getElementById('net');
 if(cv){var cx=cv.getContext('2d'),pts=[],Wd,Ht,ms={x:-999,y:-999};
