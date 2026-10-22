@@ -445,4 +445,5 @@ if(!v('n')||!v('e')||!v('m')){er.style.display='block';return}er.style.display='
 fetch('https://formsubmit.co/ajax/mcr@mcrconceptvld.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({_subject:'Website enquiry - '+v('n'),_cc:'migiecmb@gmail.com',_template:'table',_captcha:'false',Name:v('n'),Company:v('c')||'-',Email:v('e'),Phone:v('p')||'-',Category:v('cat'),Idea:v('m')})})
 .then(function(r){return r.json()}).then(function(){ok.style.display='block';document.querySelectorAll('#enq input,#enq textarea').forEach(function(i){i.value=''})})
 .catch(function(){er.textContent='Sorry, the message could not be sent. Please email mcr@mcrconceptvld.com.';er.style.display='block'}).finally(function(){bt.disabled=false})}
-</script></body></html>
+</script><script src="/assistant.js" defer></script>
+</body></html>
