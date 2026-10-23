@@ -29,7 +29,7 @@ p{font-size:18px;line-height:1.5;color:#44525c}
 <script>
 (function(){
   var p=location.pathname;
-  if(/^\/preview(\/|$)/i.test(p)){location.replace((p.replace(/^\/preview/i,'')||'/')+location.search+location.hash);return;}
+  if(/^\/(preview|draft)(\/|$)/i.test(p)){location.replace((p.replace(/^\/(preview|draft)/i,'')||'/')+location.search+location.hash);return;}
   var key='mcr404:'+location.pathname, n=0;
   try{n=parseInt(sessionStorage.getItem(key)||'0',10)}catch(e){}
   function fail(){
