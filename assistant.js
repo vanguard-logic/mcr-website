@@ -125,8 +125,11 @@
   setTimeout(function () { btn.classList.add('min'); }, 12000);
 
   var bd = box.querySelector('.bd'), inp = box.querySelector('input'), started = false, misses = 0;
+  var CATALOG = [{"c": "Beverages & RTD Drinks", "f": false, "p": [["Fruit Juices & Nectars", "NOPA"], ["Carbonated Soft Drinks", "NA"], ["Iced Tea & Herbal Drinks", "NOPA"], ["Energy & Sports Drinks", "NA"], ["Plant-Based Milks", "NOP"], ["Smoothies & Shakes", "NOPA"], ["Flavoured & Vitamin Water", "NOA"], ["Ready-to-Drink Coffee", "NOPA"], ["Mocktails & Mixers", "NA"], ["RTD Cup Drinks", "NA"]]}, {"c": "Syrups & Cordials", "f": false, "p": [["Cocktail & Mocktail Syrups", "NOA"], ["Coffee & Café Syrups", "NOA"], ["Fruit Cordials & Squashes", "NOA"], ["Herbal & Spiced Syrups", "NOP"], ["Sugar-Free Syrups", "NPA"], ["Dessert & Topping Syrups", "NA"], ["Shaved Ice & Slush Syrups", "NA"]]}, {"c": "Fruit Pulps & Purées", "f": false, "p": [["Single Fruit Pulps", "NOP"], ["Mixed Fruit Purées", "NOP"], ["Fruit Concentrates", "NOA"], ["Jams & Fruit Spreads", "NOA"], ["Bakery Fruit Fillings", "NA"], ["Vegetable Purées", "NOP"], ["Baby Food Purées", "NO"]]}, {"c": "Sauces & Dressings", "f": false, "p": [["Chilli & Hot Sauces", "NOPA"], ["Tomato Ketchup", "NOA"], ["Soy & Oyster-Style Sauces", "NPA"], ["Mayonnaise & Egg-Free Mayo", "NPA"], ["Salad Dressings", "NOPA"], ["Cooking & Curry Sauces", "NOPA"], ["Dips & Chutneys", "NOPA"], ["BBQ Sauces & Glazes", "NA"]]}, {"c": "Dairy & Frozen Desserts", "f": false, "p": [["Ice Cream", "NOPA"], ["Sorbets & Frozen Desserts", "NOPA"], ["Yoghurt & Curd", "NOP"], ["Flavoured Milk", "NOPA"], ["Puddings & Custards", "NPA"], ["Cheese Sauces & Spreads", "NPA"], ["Milkshake & Soft-Serve Bases", "NPA"]]}, {"c": "Bakery & Confectionery", "f": false, "p": [["Breads & Buns", "NOPA"], ["Cakes & Sponges", "NOPA"], ["Biscuits & Cookies", "NOPA"], ["Pastries & Puffs", "NPA"], ["Creams & Fillings", "NPA"], ["Toffees & Sweets", "NOPA"], ["Chocolate & Coatings", "NPA"], ["Bakery Premixes", "NOPA"]]}, {"c": "Spice Mixes & Seasonings", "f": false, "p": [["Curry Powders", "NOA"], ["Biryani & Rice Masalas", "NOA"], ["Garam Masala & Spice Blends", "NO"], ["Chilli Blends", "NOA"], ["Herb Blends", "NO"], ["Spice Rubs", "NOA"], ["Tempering Mixes", "NO"]]}, {"c": "Seasonings & Marinades", "f": true, "p": [["Chicken Seasoning", "NA"], ["BBQ & Grill Marinades", "NOPA"], ["Tandoori & Tikka Marinades", "NOA"], ["Seafood Marinades", "NOA"], ["Meat Tenderising Marinades", "NA"], ["Fried Rice & Noodle Seasoning", "NPA"], ["Stock & Soup Seasoning", "NOPA"], ["Snack Seasonings", "NA"], ["Plant-Based Meat Seasoning", "NOP"]]}, {"c": "Dehydrated & Freeze-Dried", "f": false, "p": [["Dehydrated Fruits", "NOA"], ["Freeze-Dried Fruits", "NO"], ["Vegetable Chips & Crisps", "NOPA"], ["Fruit & Vegetable Powders", "NOP"], ["Instant Soup Mixes", "NOPA"], ["Instant Drink Powders", "NOPA"], ["Dried Herbs & Leaves", "NO"], ["Coconut Products", "NOP"]]}, {"c": "Tea & Herbal Blends", "f": false, "p": [["Black & Green Tea Blends", "NO"], ["Flavoured Teas", "NOA"], ["Herbal Infusions", "NO"], ["Wellness Blends", "NO"], ["Chai & Spiced Tea", "NOA"], ["Iced Tea Premixes", "NOA"], ["Instant Tea Powders", "NA"]]}, {"c": "Pickles & Vegetables in Brine", "f": false, "p": [["Mixed Vegetable Pickles", "NOA"], ["Lime & Mango Pickles", "NOA"], ["Chilli Pickles", "NOA"], ["Vegetables in Brine", "NO"], ["Olives, Gherkins & Capers", "NO"], ["Fermented Vegetables", "NOP"], ["Relishes", "NOA"]]}];
+  var KEYS = { N: 'Natural', O: 'Organic', P: 'Plant-based', A: 'Artificial' };
+  var GQ = 'Get a Quote';
   var BF = 'Formulate a product', BM = 'Machinery I need', BA = 'App or software I need';
-  var CHIPS = [BF, BM, BA, 'Our services', 'Pricing', 'Talk to us'];
+  var CHIPS = [GQ, BF, BM, BA, 'Our services', 'Talk to us'];
   var SUG = { f: [BF], m: [BM], a: [BA], all: [BF, BM, BA] };
   var MAP = { 'Our services': 'services', 'Pricing': 'price', 'Talk to us': 'contact' };
   var START = {}; START[BF] = 'f'; START[BM] = 'm'; START[BA] = 'a';
@@ -138,8 +141,11 @@
   ];
   var TIME = { k: 'Timeline', q: 'When do you need it?', o: ['Within 1 month', '1 to 3 months', '3 to 6 months', 'Just planning', NS] };
   var BRIEFS = {
-    f: { t: 'Formula brief', i: 'Great! Every formula and recipe we build is tailor-made around your batch size, target market and selling price, so the ingredients, process and cost fit your plan. Please answer a few quick questions (about 1 minute).', q: [
-      { k: 'Product', q: 'What product do you want to make? Describe it in your own words, for example "biryani seasoning powder in 50 g sachets" or "soy sauce for restaurants".' },
+    f: { t: 'Quote request', i: 'Great! Every formula and recipe we build is tailor-made around your batch size, target market and selling price, so the ingredients, process and cost fit your plan. Please answer a few quick questions (about 1 minute).', q: [
+      { k: 'Category', q: 'Which category is your product in? Tap one.', o: CATALOG.map(function (c) { return c.c; }).concat(['Something else']) },
+      { k: 'Product', q: 'Which product? Tap one, or tap Other product to type your own.', dyn: 'prod' },
+      { k: 'Style', q: 'Which style do you want?', dyn: 'style' },
+      { k: 'Form', q: 'Powder or paste?', o: ['Powder', 'Paste', 'Both', 'Not sure yet'], skip: function (a) { return a.Category !== 'Seasonings & Marinades'; } },
       { k: 'Project type', q: 'Is this a new product, or do you want to improve a product you already make?', o: ['New product', 'Improve my current product', NS] },
       { k: 'Batch size', q: 'How much do you plan to make in one batch? You can tap an option or type an amount.', o: ['Under 10 kg / L', '10 to 100 kg / L', '100 to 1,000 kg / L', 'Over 1,000 kg / L', NS] },
       { k: 'Target market', q: 'Who will buy your product?', o: ['Shops and supermarkets', 'Hotels, restaurants and cafés', 'Factories / bulk buyers', 'Export', 'Online / direct', NS] },
@@ -191,28 +197,51 @@
     inp.placeholder = 'Type your answer…';
     bot((lead ? lead + ' Please answer a few quick questions (about 1 minute).' : B.i) + ' You can type "cancel" at any time.', null, false, null, null, null, askNext);
   }
-  function askNext() { var s = cur(); bot(s.q, null, false, null, s.o, 'b' + brief.n); }
+  function catOf(a) { for (var i = 0; i < CATALOG.length; i++) if (CATALOG[i].c === a.Category) return CATALOG[i]; return null; }
+  function prodOf(a) { var c = catOf(a); if (!c) return null; for (var i = 0; i < c.p.length; i++) if (c.p[i][0] === a.Product) return c.p[i]; return null; }
+  function askNext() {
+    var s = cur();
+    while (s && s.skip && s.skip(brief.a)) { brief.n++; s = cur(); }
+    if (!s) return finish();
+    var q = s.q, o = s.o;
+    if (s.dyn === 'prod') {
+      var c = catOf(brief.a);
+      if (!c || brief.typing) { q = 'What product do you want to make? Type it in your own words, for example "biryani seasoning powder in 50 g sachets".'; o = null; }
+      else o = c.p.map(function (p) { return p[0]; }).concat(['Other product']);
+    }
+    if (s.dyn === 'style') {
+      var p = prodOf(brief.a);
+      o = (p ? p[1].split('').map(function (x) { return KEYS[x]; }) : ['Natural', 'Organic', 'Plant-based', 'Artificial']).concat(['Not sure yet']);
+    }
+    bot(q, null, false, null, o, 'b' + brief.n);
+  }
   function stopBrief(t) { brief = null; inp.placeholder = 'Type your question…'; if (t) bot(t, null, false, null, CHIPS); }
   function briefText() {
     var t = BRIEFS[brief.type].t + ' from the MCR website\n';
-    brief.list.forEach(function (s) { t += s.k + ': ' + (brief.a[s.k] || '-') + '\n'; });
+    done().forEach(function (s) { t += s.k + ': ' + brief.a[s.k] + '\n'; });
     return t;
   }
   function briefAnswer(v) {
     if (/^(cancel|stop|exit|quit)$/i.test(v)) return stopBrief('No problem, the brief is cancelled. How else can I help you?');
     var s = cur();
     if (s.k === 'Contact' && !(/@/.test(v) || (v.replace(/\D/g, '').length >= 7))) return bot('Please enter a WhatsApp number or an email address so we can reply to you.');
-    if (brief.n === 0 && v.length < 3) return bot('Please describe it in a few words.');
-    brief.a[s.k] = v; brief.n++;
+    if (s.dyn === 'prod' && v === 'Other product') { brief.typing = true; return askNext(); }
+    if (s.k === 'Product' && v.length < 3) return bot('Please describe it in a few words.');
+    brief.a[s.k] = v; brief.n++; brief.typing = false;
     if (brief.n < brief.list.length) return askNext();
+    finish();
+  }
+  function done() { return brief.list.filter(function (q) { return q.k in brief.a; }); }
+  function finish() {
+    brief.n = brief.list.length;
     inp.placeholder = 'Type your question…';
-    var sum = 'Here is your ' + BRIEFS[brief.type].t.toLowerCase() + ':\n\n' + brief.list.map(function (q) { return q.k + ': ' + brief.a[q.k]; }).join('\n') + '\n\nTap Send to MCR and our team will contact you.';
+    var sum = 'Here is your ' + BRIEFS[brief.type].t.toLowerCase() + ':\n\n' + done().map(function (q) { return q.k + ': ' + brief.a[q.k]; }).join('\n') + '\n\nTap Send to MCR and our team will contact you.';
     bot(sum, null, false, null, ['Send to MCR', 'Start again'], 'send');
   }
   function sendBrief() {
     var a = brief.a, note = msg('Sending…', 'b'), t = BRIEFS[brief.type].t;
-    var data = { _subject: t + ' - ' + a.Name, _cc: 'migiecmb@gmail.com', _template: 'table', _captcha: 'false' };
-    brief.list.forEach(function (q) { data[q.k] = a[q.k] || '-'; });
+    var data = { _subject: (brief.type === 'f' ? 'Quote request' : t) + ' - ' + (a.Product ? a.Product + ' - ' : '') + a.Name, _cc: 'migiecmb@gmail.com', _template: 'table', _captcha: 'false' };
+    done().forEach(function (q) { data[q.k] = a[q.k]; });
     var wt = briefText();
     fetch('https://formsubmit.co/ajax/mcr@mcrconceptvld.com', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) })
       .then(function (r) { if (!r.ok) throw 0; return r.json(); })
@@ -259,8 +288,21 @@
     }
     if (brief) return;
     msg(t, 'u');
+    if (t === GQ) return bot('What would you like a quote for?', null, false, null, [BF, BM, BA]);
     if (START[t]) return startBrief(START[t]);
     reply(answer(MAP[t] || t), t);
+  });
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a.eq'); if (!a) return;
+    var row = a.closest('.it'); var m = /[?&]cat=([^&#]+)/.exec(a.getAttribute('href') || '');
+    if (!row || !m) return;
+    e.preventDefault();
+    var c = decodeURIComponent(m[1]), p = row.querySelector('.nm b').textContent;
+    open(); stopBrief();
+    msg('Get a quote for ' + p, 'u');
+    brief = { type: 'f', n: 2, a: { Category: c, Product: p }, list: BRIEFS.f.q.concat(END) };
+    inp.placeholder = 'Type your answer…';
+    bot('Great choice! ' + p + ' (' + c + '). Every formula is tailor-made, so please tap a few quick answers (about 1 minute).', null, false, null, null, null, askNext);
   });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && box.classList.contains('open')) close(); });
 })();
